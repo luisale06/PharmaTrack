@@ -24,7 +24,7 @@
                     <asp:TextBox ID="txt_contraseña" runat="server"></asp:TextBox>
                     <br />
                     <br />
-                    <asp:LinkButton ID="btn_iniciosesion" Text="Iniciar sesión" runat="server" class="btn btn-primary btn-sm"></asp:LinkButton>
+                    <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/pages/Main.aspx" runat="server" class="btn btn-primary btn-sm"></asp:HyperLink>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

@@ -86,11 +86,11 @@ Partial Public Class _register
     Protected WithEvents txt_contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btn_registro.
+    '''Control hpl_registro.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_registro As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents hpl_registro As Global.System.Web.UI.WebControls.HyperLink
 End Class

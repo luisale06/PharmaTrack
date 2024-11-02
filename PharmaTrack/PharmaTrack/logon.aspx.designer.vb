@@ -41,11 +41,11 @@ Partial Public Class _logon
     Protected WithEvents txt_contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control btn_iniciosesion.
+    '''Control hpl_iniciosesion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_iniciosesion As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents hpl_iniciosesion As Global.System.Web.UI.WebControls.HyperLink
 End Class

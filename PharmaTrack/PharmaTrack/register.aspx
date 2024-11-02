@@ -44,7 +44,7 @@
                     <asp:TextBox ID="txt_contraseña" runat="server"></asp:TextBox>
                     <br />
                     <br />
-                    <asp:LinkButton ID="btn_registro" Text="Registrarse" runat="server" class="btn btn-primary btn-sm"></asp:LinkButton>
+                    <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/pages/Main.aspx" runat="server" class="btn btn-primary btn-sm"></asp:HyperLink>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

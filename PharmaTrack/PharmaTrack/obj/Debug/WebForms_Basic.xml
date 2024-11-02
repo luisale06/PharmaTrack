@@ -46,6 +46,141 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._Main._BtnResumen">
+<summary>
+Control BtnResumen.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._BtnRegistrarFactura">
+<summary>
+Control BtnRegistrarFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._BtnHistorial">
+<summary>
+Control BtnHistorial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._BtnCanjear">
+<summary>
+Control BtnCanjear.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._MultiView1">
+<summary>
+Control MultiView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ViewResumen">
+<summary>
+Control ViewResumen.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ViewRegistrarFactura">
+<summary>
+Control ViewRegistrarFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ddl_farmacia">
+<summary>
+Control ddl_farmacia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_FechaCompra">
+<summary>
+Control txt_FechaCompra.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_NumeroFactura">
+<summary>
+Control txt_NumeroFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ddl_Producto">
+<summary>
+Control ddl_Producto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_Cantidad">
+<summary>
+Control txt_Cantidad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_ImagenFactura">
+<summary>
+Control txt_ImagenFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ViewHistorial">
+<summary>
+Control ViewHistorial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ViewCanjear">
+<summary>
+Control ViewCanjear.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._register._hpl_iniciosesion">
 <summary>
 Control hpl_iniciosesion.
@@ -118,9 +253,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._register._btn_registro">
+<member name="F:PharmaTrack._register._hpl_registro">
 <summary>
-Control btn_registro.
+Control hpl_registro.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -154,9 +289,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._logon._btn_iniciosesion">
+<member name="F:PharmaTrack._logon._hpl_iniciosesion">
 <summary>
-Control btn_iniciosesion.
+Control hpl_iniciosesion.
 </summary>
 <remarks>
 Campo generado automáticamente.
