@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\proyectopharmatrackfgh\\pharmatrack\\pharmatrack\\pharmatrack\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\pharmatrack\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.aspx",
+              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\PharmaTrack\\About.aspx",
+              "RelativeDocumentMoniker": "PharmaTrack\\About.aspx",
+              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\PharmaTrack\\About.aspx",
+              "RelativeToolTip": "PharmaTrack\\About.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-02T03:19:57.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "register.aspx",
+              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\PharmaTrack\\register.aspx",
+              "RelativeDocumentMoniker": "PharmaTrack\\register.aspx",
+              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\ProyectoPharmaTrackFGH\\PharmaTrack\\PharmaTrack\\PharmaTrack\\register.aspx",
+              "RelativeToolTip": "PharmaTrack\\register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-30T07:58:35.386Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
