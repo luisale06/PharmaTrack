@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="pages\MainAdmin.aspx" />
     <Content Include="pages\Main.aspx" />
     <Content Include="register.aspx" />
     <Content Include="logon.aspx" />
@@ -223,6 +224,13 @@
     <Compile Include="Contact.aspx.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pages\MainAdmin.aspx.designer.vb">
+      <DependentUpon>MainAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\MainAdmin.aspx.vb">
+      <DependentUpon>MainAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pages\Main.aspx.designer.vb">
       <DependentUpon>Main.aspx</DependentUpon>
