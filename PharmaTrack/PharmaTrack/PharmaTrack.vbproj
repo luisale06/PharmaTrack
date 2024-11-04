@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
     <Content Include="pages\MainAdmin.aspx" />
     <Content Include="pages\Main.aspx" />
     <Content Include="register.aspx" />

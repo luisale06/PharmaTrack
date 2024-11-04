@@ -1,21 +1,423 @@
-﻿/* Wrapping element */
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
 }
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
     .body-content {
         padding: 0;
     }
+}
+
+/*Forms*/
+.form-header {
+    background-color: #003366;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    .form-header h2, .form-header h3, .form-header h4 {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-header .float-right {
+        float: right;
+        margin-top: 10px;
+    }
+
+/*Forms2*/
+.form-header2 {
+    background-color: #007da4;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    .form-header2 h2, .form-header2 h3, .form-header2 h4 {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-header2 .float-right {
+        float: right;
+        margin-top: 10px;
+    }
+
+.form-body {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+/*End Forms*/
+
+/*Generic*/
+.margin-top-18-neg {
+    margin-top: -18px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.padding-top-label-sim {
+    padding-top: 32px;
+}
+
+.width-100 {
+    width: 100%
+}
+
+.text-center {
+    text-align: center;
+}
+
+.chk-lst-table label {
+    margin-left: 6px;
+    margin-right: 4px;
+}
+/*End Generic*/
+hr.hr-black {
+    border: 1px ridge;
+    clear: both;
+    display: block;
+    margin: 1.4rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+.label-input, .label-input-top {
+    position: relative;
+    margin-top: 16px;
+}
+
+    .label-input label, .label-input-top label {
+        position: absolute;
+        color: #006699;
+        font-size: 0.9em;
+        top: -10px;
+        left: 12px;
+        z-index: 2;
+        background: white;
+        padding: 0 5px;
+        z-index: 3;
+    }
+
+    .label-input .select2-container, .label-input-top .select2-container {
+        display: block;
+    }
+
+    .label-input .select2-container--default .select2-selection--single, .label-input-top .select2-container--default .select2-selection--single {
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        height: 34px;
+    }
+
+        .label-input .select2-container--default .select2-selection--single .select2-selection__arrow, .label-input-top .select2-container--default .select2-selection--single .select2-selection__arrow {
+            margin-top: 3px;
+        }
+
+    .label-input-top label {
+        top: -18px;
+    }
+
+.error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+.form-header3 {
+    background-color: #007da4;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .form-header3 h2, .form-header3 h3, .form-header3 h4 {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-header3 .float-right {
+        float: right;
+        margin-top: 10px;
+    }
+
+
+.paginar > td > table > tbody > tr > td {
+    border: 0.5px solid #ddd;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    background-color: #F9F9F9;
+    color: black;
+}
+
+.paginar > td > table > tbody > tr > :hover {
+    background-color: #ddd;
+}
+
+.paginar > td > table > tbody > tr > td > a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.form-control[readonly] {
+    background-color: #f9f9f9;
+}
+
+.hide {
+    display: none;
+}
+
+/* https://www.freecodecamp.org/news/css-only-pie-chart/ */
+/*INICIO PIE CHART*/
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 1;
+}
+
+.pie {
+    --p: 50; /* Porcentaje */
+    --b: 10px; /* Grosor */
+    --c: #006699; /* Color */
+    --w: 120px; /* Ancho */
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    .pie:before,
+    .pie:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .pie:before {
+        inset: 0;
+        background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+        -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+        mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    }
+
+    .pie:after {
+        inset: calc(50% - var(--b)/2);
+        background: var(--c);
+        transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    }
+
+.animate {
+    animation: p 1s .5s both;
+}
+
+.no-round:before {
+    background-size: 0 0, auto;
+}
+
+.no-round:after {
+    content: none;
+}
+
+@keyframes p {
+    from {
+        --p: 0
+    }
+}
+/*FIN PIE CHART*/
+
+@media (min-width: 768px) {
+
+    .frame-bi {
+        width: 100%;
+        height: 650px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-bi {
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+div.progressbar {
+    -webkit-transition: all 18s;
+    -moz-transition: all 18s;
+    -ms-transition: all 18s;
+    -o-transition: all 18s;
+    transition: all 18s;
+    background-color: white;
+    margin-bottom: 10px;
+    webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .1);
+}
+
+div.progressbar-interno {
+    -webkit-transition: all 18s;
+    -moz-transition: all 18s;
+    -ms-transition: all 18s;
+    -o-transition: all 18s;
+    transition: all 18s;
+}
+
+/*Loader linear*/
+.loader-line {
+    --s: 20s; /* Duracion del loader */
+    display: none;
+    width: 80%;
+    height: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+    margin: 10px auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+    .loader-line:before {
+        content: "";
+        position: absolute;
+        left: -50%;
+        height: 3px;
+        width: 40%;
+        background-color: #006699;
+        -webkit-animation: lineAnim var(--s) linear forwards;
+        -moz-animation: lineAnim var(--s) linear forwards;
+        animation: lineAnim var(--s) linear forwards;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+@keyframes lineAnim {
+    0% {
+        left: 0%;
+        width: 0%;
+    }
+
+    50% {
+        left: 0%;
+        width: 50%;
+    }
+
+    100% {
+        left: 0%;
+        width: 100%;
+    }
+}
+/*Loader circular*/
+.loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #006699;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.textbox-format {
+    resize: vertical;
+    min-height: 8rem;
+    max-height: 20rem;
+}
+
+.label-importante {
+    color: red;
+    font-weight: bold;
+}
+/* Tree View example */
+ul.treeViewRoot li {
+    line-height: 20px;
+    width: 600px;
+}
+
+.treeView_expand, .treeView_collapse {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    float: left;
+    cursor: pointer;
+    padding: 0px;
+}
+
+form ul,
+form ol {
+    list-style-type: none;
 }
