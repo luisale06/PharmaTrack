@@ -20,7 +20,16 @@ Partial Public Class _MainAdmin
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_Usuarios As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Usuarios As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_usuarios.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_usuarios As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control btn_Facturas.
@@ -29,7 +38,16 @@ Partial Public Class _MainAdmin
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_Facturas As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Facturas As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_facturas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_facturas As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control btn_Productos.
@@ -38,7 +56,16 @@ Partial Public Class _MainAdmin
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_Productos As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Productos As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_productos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_productos As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control btn_Estadisticas.
@@ -47,7 +74,16 @@ Partial Public Class _MainAdmin
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_Estadisticas As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Estadisticas As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_estadisticas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_estadisticas As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control MultiView1.

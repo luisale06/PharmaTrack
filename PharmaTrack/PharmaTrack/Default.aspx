@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="PharmaTrack._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br />
+    <br />
+    <br />
+    <br />
     <main>
         <div class="row">
             <section class="col-md-6">
@@ -9,9 +12,9 @@
                     runat="server"></asp:Label>
                 <br />
                 <br />
-                <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/logon.aspx" runat="server" class="btn btn-primary btn-sm"></asp:HyperLink>
+                <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/logon.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/register.aspx" runat="server" class="btn btn-primary btn-sm"></asp:HyperLink>
+                <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/register.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
             </section>
         </div>
     </main>

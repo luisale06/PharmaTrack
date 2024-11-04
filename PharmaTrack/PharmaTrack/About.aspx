@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="About" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.vb" Inherits="PharmaTrack.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <br />
+    <br />
     <main>
         <h1>¡Bienvenido al programa de Beneficios de Canje de Puntos!</h1>
         <table>

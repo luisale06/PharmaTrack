@@ -32,13 +32,13 @@ Partial Public Class _logon
     Protected WithEvents txt_correo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txt_contraseña.
+    '''Control txt_contrasena.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_contraseña As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_contrasena As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control hpl_iniciosesion.

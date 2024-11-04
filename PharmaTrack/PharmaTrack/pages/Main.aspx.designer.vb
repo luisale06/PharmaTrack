@@ -20,7 +20,16 @@ Partial Public Class _Main
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnResumen As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnResumen As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_resumen.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_resumen As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control BtnRegistrarFactura.
@@ -29,7 +38,16 @@ Partial Public Class _Main
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnRegistrarFactura As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnRegistrarFactura As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_registrar_factura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_registrar_factura As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control BtnHistorial.
@@ -38,7 +56,16 @@ Partial Public Class _Main
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnHistorial As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnHistorial As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_historial.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_historial As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control BtnCanjear.
@@ -47,7 +74,16 @@ Partial Public Class _Main
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnCanjear As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnCanjear As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_canjear.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_canjear As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control MultiView1.

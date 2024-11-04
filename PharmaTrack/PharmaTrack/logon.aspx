@@ -1,33 +1,34 @@
 ﻿<%@ Page Title="logon" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="logon.aspx.vb" Inherits="PharmaTrack._logon" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <main>
+    <br />
+    <br />
+    <div class="form-wrapper">
         <asp:Table runat="server">
-            <asp:TableRow>
-                <asp:TableCell BackColor="#0066cc" HorizontalAlign="Center" ForeColor="White" Height="600px" Width="300px">
+            <asp:TableRow Width="50%">
+                <asp:TableCell BackColor="#006699" HorizontalAlign="Center" ForeColor="White" Height="600px" Width="50%">
                     <h1>¡Bienvenido!</h1>
                     <asp:Label Text="Si aún no tienes una cuenta, regístrate ahora" runat="server"></asp:Label>
                     <br />
                     <br />
-                    <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/register.aspx" runat="server" class="btn btn-light btn-sm"></asp:HyperLink>
+                    <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/register.aspx" runat="server" CssClass="btn btn-cancel"></asp:HyperLink>
                 </asp:TableCell>
-                <asp:TableCell BackColor="LightGray" HorizontalAlign="Center" Height="600px" Width="500px">
+                <asp:TableCell BackColor="White" HorizontalAlign="Center" Height="600px" Width="50%">
                     <h1>Iniciar sesión</h1>
                     <br />
-                    <asp:Label Text="Correo electrónico" runat="server"></asp:Label>
+                    <div class="label-input">
+                        <asp:Label Text="Correo electrónico" runat="server" AssociatedControlID="txt_correo"></asp:Label>
+                        <asp:TextBox ID="txt_correo" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                    </div>
+                    <div class="label-input">
+                        <asp:Label Text="Contraseña" runat="server" AssociatedControlID="txt_contrasena"></asp:Label>
+                        <asp:TextBox ID="txt_contrasena" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                    </div>
                     <br />
-                    <asp:TextBox ID="txt_correo" runat="server"></asp:TextBox>
                     <br />
-                    <asp:Label Text="Contraseña" runat="server"></asp:Label>
-                    <br />
-                    <asp:TextBox ID="txt_contraseña" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/pages/Main.aspx" runat="server" class="btn btn-primary btn-sm"></asp:HyperLink>
+                    <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/pages/Main.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
-    </main>
-
+    </div>
 </asp:Content>

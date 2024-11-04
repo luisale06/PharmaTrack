@@ -1,26 +1,37 @@
 ﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.vb" Inherits="PharmaTrack._Main" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <main>
         <div>
             <table runat="server" width="100%">
                 <tr>
                     <td width="25%">
-                        <asp:Button ID="BtnResumen" runat="server" Text="Resumen" OnClick="BtnResumen_Click" Width="90%"/>
+                        <asp:LinkButton ID="BtnResumen" CssClass="btn btn-cancel" runat="server" OnClick="BtnResumen_Click" Width="90%">
+                            <asp:Literal ID="ltl_resumen" runat="server" Text="<span class='glyphicon glyphicon-usd'></span> Resumen"></asp:Literal>
+                        </asp:LinkButton>
                     </td>
                     <td width="25%">
-                        <asp:Button ID="BtnRegistrarFactura" runat="server" Text="Registrar Factura" OnClick="BtnRegistrarFactura_Click" Width="90%"/>
+                        <asp:LinkButton ID="BtnRegistrarFactura" CssClass="btn btn-cancel" runat="server" OnClick="BtnRegistrarFactura_Click" Width="90%">
+                            <asp:Literal ID="ltl_registrar_factura" runat="server" Text="<span class='glyphicon glyphicon-open-file'></span> Registrar Factura"></asp:Literal>
+                        </asp:LinkButton>
                     </td>
                     <td width="25%">
-                        <asp:Button ID="BtnHistorial" runat="server" Text="Historial" OnClick="BtnHistorial_Click" Width="90%"/>
+                        <asp:LinkButton ID="BtnHistorial" CssClass="btn btn-cancel" runat="server" OnClick="BtnHistorial_Click" Width="90%">
+                            <asp:Literal ID="ltl_historial" runat="server" Text="<span class='glyphicon glyphicon-th-list'></span> Historial"></asp:Literal>
+                        </asp:LinkButton>
                     </td>
                     <td width="25%">
-                        <asp:Button ID="BtnCanjear" runat="server" Text="Canjear" OnClick="BtnCanjear_Click" Width="90%"/>
+                        <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClick="BtnCanjear_Click" Width="90%">
+                            <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span> Canjear"></asp:Literal>
+                        </asp:LinkButton>
                     </td>
                 </tr>
             </table>
-            <br />
             <br />
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="ViewResumen" runat="server">
