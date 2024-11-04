@@ -56,38 +56,50 @@
                 </asp:View>
 
                 <asp:View ID="ViewRegistrarFactura" runat="server">
-                    <asp:Panel runat="server" BackColor="LightGray" Width="50%">
+                    <asp:Panel runat="server" Width="50%">
                         <h2>Registrar Factura</h2>
                         <p>Complete el siguiente formulario para registrar un nueva factura</p>
                         <table width="100%">
                             <tr>
                                 <td width="50%">
-                                    <asp:Label runat="server" AssociatedControlID="ddl_Farmacia" Text="Farmacia"></asp:Label>
-                                    <asp:DropDownList runat="server" ID="ddl_farmacia" Width="90%"></asp:DropDownList>
+                                    <div class="label-input">
+                                        <asp:Label runat="server" AssociatedControlID="ddl_Farmacia" Text="Farmacia"></asp:Label>
+                                        <asp:DropDownList runat="server" ID="ddl_farmacia" CssClass="form-control" Width="90%"></asp:DropDownList>
+                                    </div>
                                 </td>
                                 <td width="50%">
-                                    <asp:Label runat="server" AssociatedControlID="txt_FechaCompra" Text="Fecha de Compra"></asp:Label>
-                                    <asp:TextBox runat="server" ID="txt_FechaCompra" Width="90%"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="50%">
-                                    <asp:Label runat="server" AssociatedControlID="txt_NumeroFactura" Text="Número de Factura"></asp:Label>
-                                    <asp:TextBox runat="server" ID="txt_NumeroFactura" Width="90%"></asp:TextBox>
-                                </td>
-                                <td width="50%">
-                                    <asp:Label runat="server" AssociatedControlID="ddl_Producto" Text="Producto"></asp:Label>
-                                    <asp:DropDownList runat="server" ID="ddl_Producto" Width="90%"></asp:DropDownList>
+                                    <div class="label-input">
+                                        <asp:Label runat="server" Text="Fecha de Compra" Font-Bold="true" ForeColor="#006699" AssociatedControlID="txt_FechaCompra"></asp:Label>
+                                        <asp:TextBox runat="server" ID="txt_FechaCompra" CssClass="form-control" Width="90%" type="date" BackColor="White"></asp:TextBox>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="50%">
-                                    <asp:Label runat="server" AssociatedControlID="txt_Cantidad" Text="Cantidad"></asp:Label>
-                                    <asp:TextBox runat="server" ID="txt_Cantidad" Width="90%"></asp:TextBox>
+                                    <div class="label-input">
+                                        <asp:Label runat="server" AssociatedControlID="txt_NumeroFactura" Text="Número de Factura"></asp:Label>
+                                        <asp:TextBox runat="server" ID="txt_NumeroFactura" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    </div>
                                 </td>
                                 <td width="50%">
-                                    <asp:Label runat="server" Text="Imagen de la factura"></asp:Label>
-                                    <asp:TextBox runat="server" ID="txt_ImagenFactura" Width="90%"></asp:TextBox>
+                                    <div class="label-input">
+                                        <asp:Label runat="server" AssociatedControlID="ddl_Producto" Text="Producto"></asp:Label>
+                                        <asp:DropDownList runat="server" ID="ddl_Producto" CssClass="form-control" Width="90%"></asp:DropDownList>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    <div class="label-input">
+                                        <asp:Label runat="server" AssociatedControlID="txt_Cantidad" Text="Cantidad"></asp:Label>
+                                        <asp:TextBox runat="server" ID="txt_Cantidad" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    </div>
+                                </td>
+                                <td width="50%">
+                                    <div class="label-input">
+                                        <asp:Label runat="server" Text="Imagen de la factura" AssociatedControlID="txt_ImagenFactura"></asp:Label>
+                                        <asp:TextBox runat="server" ID="txt_ImagenFactura" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
