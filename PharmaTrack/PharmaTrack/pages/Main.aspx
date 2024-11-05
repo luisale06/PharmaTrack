@@ -43,9 +43,9 @@
 
                             </td>
                             <td width="40%">
-                                <asp:Panel runat="server" BackColor="LightGray" HorizontalAlign="Center">
-                                    <h2>Total de puntos</h2>
-                                    <asp:Label runat="server" ForeColor="Green" Text="*Puntos*"></asp:Label>
+                                <asp:Panel runat="server" ID="PanelTotalPuntos" CssClass="panel-redondeado">
+                                    <h3>Total de puntos:</h3>
+                                    <asp:Label runat="server" ForeColor="Green" Text="*Puntos*" Font-Size="30px"></asp:Label>
                                 </asp:Panel>
                             </td>
                             <td width="30%">
@@ -56,7 +56,7 @@
                 </asp:View>
 
                 <asp:View ID="ViewRegistrarFactura" runat="server">
-                    <asp:Panel runat="server" Width="50%">
+                    <asp:Panel runat="server" Width="65%" CssClass="panel-redondeado-facturas">
                         <h2>Registrar Factura</h2>
                         <p>Complete el siguiente formulario para registrar un nueva factura</p>
                         <table width="100%">

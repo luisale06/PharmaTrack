@@ -5,6 +5,39 @@ body {
     padding-bottom: 20px;
     margin: 0;
 }
+p {
+    color: #9C9D9D;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+   
+}
+
+.panel-redondeado {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #EEEFEF;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
+.panel-redondeado-facturas{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #EEEFEF;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input, select{
+    margin-bottom: 30px;
+}
+
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -141,6 +174,8 @@ hr.hr-black {
 .label-input, .label-input-top {
     position: relative;
     margin-top: 16px;
+
+
 }
 
     .label-input label, .label-input-top label {
@@ -216,6 +251,8 @@ hr.hr-black {
 .form-control[readonly] {
     background-color: #f9f9f9;
 }
+
+
 
 .hide{
     display:none;
@@ -938,15 +975,16 @@ div.border-color-green {
 
 .btn-cancel:hover {
     color: #fff;
-    background-color: #8d8c86;
+    background-color: #206BAD;
     border-color: #8d8c86;
 }
 
 .btn-cancel {
-    color: #fff;
-    background-color: #adacaa;
+    color: #9C9D9D;
+    background-color: #ECEDED;
     border-color: #adacaa;
 }
+
 
 td.background-checkin {
     background-color: #d5eafa;
@@ -979,6 +1017,9 @@ td.background-checkin {
     color: #007da4;
     font-size: 15px;
     font-weight: bold;
+}
+.span{
+    font-size: 20px;
 }
 
 .table-border-none {
@@ -1552,7 +1593,7 @@ tbody tr th.headRowSortDesc a {
 }
 
 .navbar-iica {
-    background-color: #003366;
+    background-color: #206BAD;
     padding-right: 15px;
 }
 
