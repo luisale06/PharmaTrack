@@ -46,7 +46,34 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._btn_Usuarios">
+<member name="F:PharmaTrack._Main._BtnPerfil">
+<summary>
+Control BtnPerfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ltl_perfil">
+<summary>
+Control ltl_perfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._pnl_MainAdmin">
+<summary>
+Control pnl_MainAdmin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._btn_Usuarios">
 <summary>
 Control btn_Usuarios.
 </summary>
@@ -55,7 +82,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._ltl_usuarios">
+<member name="F:PharmaTrack._Main._ltl_usuarios">
 <summary>
 Control ltl_usuarios.
 </summary>
@@ -64,25 +91,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._btn_Facturas">
-<summary>
-Control btn_Facturas.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._ltl_facturas">
-<summary>
-Control ltl_facturas.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._btn_Productos">
+<member name="F:PharmaTrack._Main._btn_Productos">
 <summary>
 Control btn_Productos.
 </summary>
@@ -91,7 +100,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._ltl_productos">
+<member name="F:PharmaTrack._Main._ltl_productos">
 <summary>
 Control ltl_productos.
 </summary>
@@ -100,7 +109,34 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._btn_Estadisticas">
+<member name="F:PharmaTrack._Main._pnl_MainOperativo">
+<summary>
+Control pnl_MainOperativo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._btn_Facturas">
+<summary>
+Control btn_Facturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ltl_facturas">
+<summary>
+Control ltl_facturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._btn_Estadisticas">
 <summary>
 Control btn_Estadisticas.
 </summary>
@@ -109,7 +145,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._ltl_estadisticas">
+<member name="F:PharmaTrack._Main._ltl_estadisticas">
 <summary>
 Control ltl_estadisticas.
 </summary>
@@ -118,54 +154,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._MainAdmin._MultiView1">
+<member name="F:PharmaTrack._Main._pnl_MainCliente">
 <summary>
-Control MultiView1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._view_Usuarios">
-<summary>
-Control view_Usuarios.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._view_Facturas">
-<summary>
-Control view_Facturas.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._txt_Filtro">
-<summary>
-Control txt_Filtro.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._view_Productos">
-<summary>
-Control view_Productos.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._MainAdmin._view_Estadisticas">
-<summary>
-Control view_Estadisticas.
+Control pnl_MainCliente.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -244,9 +235,171 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._MultiView1">
+<member name="F:PharmaTrack._Main._MultiViewMain">
 <summary>
-Control MultiView1.
+Control MultiViewMain.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._view_Perfil">
+<summary>
+Control view_Perfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_nombre">
+<summary>
+Control txt_nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_PApellido">
+<summary>
+Control txt_PApellido.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_SApellido">
+<summary>
+Control txt_SApellido.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_cedula">
+<summary>
+Control txt_cedula.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_telefono">
+<summary>
+Control txt_telefono.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_correo">
+<summary>
+Control txt_correo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_contraseña">
+<summary>
+Control txt_contraseña.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_confirma_contraseña">
+<summary>
+Control txt_confirma_contraseña.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._btn_actualizarPerfil">
+<summary>
+Control btn_actualizarPerfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ltl_actualizarPerfil">
+<summary>
+Control ltl_actualizarPerfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._btn_borrarPerfil">
+<summary>
+Control btn_borrarPerfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._ltl_borrarPerfil">
+<summary>
+Control ltl_borrarPerfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._view_Usuarios">
+<summary>
+Control view_Usuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._view_Facturas">
+<summary>
+Control view_Facturas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_Filtro">
+<summary>
+Control txt_Filtro.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._view_Productos">
+<summary>
+Control view_Productos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._view_Estadisticas">
+<summary>
+Control view_Estadisticas.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -415,9 +568,27 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._register._hpl_registro">
+<member name="F:PharmaTrack._register._txt_confirma_contraseña">
 <summary>
-Control hpl_registro.
+Control txt_confirma_contraseña.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._register._lbl_msj_error">
+<summary>
+Control lbl_msj_error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._register._btn_registro">
+<summary>
+Control btn_registro.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -451,9 +622,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._logon._hpl_iniciosesion">
+<member name="F:PharmaTrack._logon._lbl_msj_error">
 <summary>
-Control hpl_iniciosesion.
+Control lbl_msj_error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._logon._btn_iniciosesion">
+<summary>
+Control btn_iniciosesion.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -481,6 +661,24 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:PharmaTrack._Default._hpl_registro">
 <summary>
 Control hpl_registro.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack.SiteMaster._a_inicio">
+<summary>
+Control a_inicio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack.SiteMaster._btnCerrarSesion">
+<summary>
+Control btnCerrarSesion.
 </summary>
 <remarks>
 Campo generado automáticamente.

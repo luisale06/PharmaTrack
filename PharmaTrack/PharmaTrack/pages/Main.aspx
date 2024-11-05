@@ -5,35 +5,151 @@
     <br />
     <br />
     <br />
-    <br />
     <main>
         <div>
-            <table runat="server" width="100%">
-                <tr>
-                    <td width="25%">
-                        <asp:LinkButton ID="BtnResumen" CssClass="btn btn-cancel" runat="server" OnClick="BtnResumen_Click" Width="90%">
-                            <asp:Literal ID="ltl_resumen" runat="server" Text="<span class='glyphicon glyphicon-usd'></span> Resumen"></asp:Literal>
-                        </asp:LinkButton>
-                    </td>
-                    <td width="25%">
-                        <asp:LinkButton ID="BtnRegistrarFactura" CssClass="btn btn-cancel" runat="server" OnClick="BtnRegistrarFactura_Click" Width="90%">
-                            <asp:Literal ID="ltl_registrar_factura" runat="server" Text="<span class='glyphicon glyphicon-open-file'></span> Registrar Factura"></asp:Literal>
-                        </asp:LinkButton>
-                    </td>
-                    <td width="25%">
-                        <asp:LinkButton ID="BtnHistorial" CssClass="btn btn-cancel" runat="server" OnClick="BtnHistorial_Click" Width="90%">
-                            <asp:Literal ID="ltl_historial" runat="server" Text="<span class='glyphicon glyphicon-th-list'></span> Historial"></asp:Literal>
-                        </asp:LinkButton>
-                    </td>
-                    <td width="25%">
-                        <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClick="BtnCanjear_Click" Width="90%">
-                            <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span> Canjear"></asp:Literal>
-                        </asp:LinkButton>
-                    </td>
-                </tr>
-            </table>
+            <asp:LinkButton ID="BtnPerfil" CssClass="btn btn-cancel btn-circle" runat="server" OnClick="btn_Perfil_Click">
+                <asp:Literal ID="ltl_perfil" runat="server" Text="<span class='glyphicon glyphicon-user icon-large'></span>"></asp:Literal>
+            </asp:LinkButton>
             <br />
-            <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
+            <br />
+            <asp:Panel runat="server" ID="pnl_MainAdmin" Visible="false">
+                <asp:LinkButton ID="btn_Usuarios" CssClass="btn btn-cancel" runat="server" OnClick="btn_Usuarios_Click">
+                    <asp:Literal ID="ltl_usuarios" runat="server" Text="<span class='glyphicon glyphicon-globe'></span> Usuarios"></asp:Literal>
+                </asp:LinkButton>
+                <asp:LinkButton ID="btn_Productos" CssClass="btn btn-cancel" runat="server" OnClick="btn_Productos_Click">
+                    <asp:Literal ID="ltl_productos" runat="server" Text="<span class='glyphicon glyphicon-barcode'></span> Productos"></asp:Literal>
+                </asp:LinkButton>
+            </asp:Panel>
+
+            <asp:Panel runat="server" ID="pnl_MainOperativo" Visible="false">
+                <asp:LinkButton ID="btn_Facturas" CssClass="btn btn-cancel" runat="server" OnClick="btn_Facturas_Click">
+                    <asp:Literal ID="ltl_facturas" runat="server" Text="<span class='glyphicon glyphicon-list-alt'></span> Facturas"></asp:Literal>
+                </asp:LinkButton>
+                <asp:LinkButton ID="btn_Estadisticas" CssClass="btn btn-cancel" runat="server" OnClick="btn_Estadisticas_Click">
+                    <asp:Literal ID="ltl_estadisticas" runat="server" Text="<span class='glyphicon glyphicon-stats'></span> Estadísticas"></asp:Literal>
+                </asp:LinkButton>
+            </asp:Panel>
+            
+            <asp:Panel runat="server" ID="pnl_MainCliente" Visible="false">
+                <asp:LinkButton ID="BtnResumen" CssClass="btn btn-cancel" runat="server" OnClick="BtnResumen_Click">
+                    <asp:Literal ID="ltl_resumen" runat="server" Text="<span class='glyphicon glyphicon-usd'></span> Resumen"></asp:Literal>
+                </asp:LinkButton>
+                <asp:LinkButton ID="BtnRegistrarFactura" CssClass="btn btn-cancel" runat="server" OnClick="BtnRegistrarFactura_Click">
+                    <asp:Literal ID="ltl_registrar_factura" runat="server" Text="<span class='glyphicon glyphicon-open-file'></span> Registrar Factura"></asp:Literal>
+                </asp:LinkButton>
+                <asp:LinkButton ID="BtnHistorial" CssClass="btn btn-cancel" runat="server" OnClick="BtnHistorial_Click">
+                    <asp:Literal ID="ltl_historial" runat="server" Text="<span class='glyphicon glyphicon-th-list'></span> Historial"></asp:Literal>
+                </asp:LinkButton>
+                <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClick="BtnCanjear_Click">
+                    <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span> Canjear"></asp:Literal>
+                </asp:LinkButton>
+            </asp:Panel>
+            <br />
+            <div class="horizontal-line"></div>
+            <asp:MultiView ID="MultiViewMain" runat="server">
+                <asp:View ID="view_Perfil" runat="server">
+                    <h2>Perfil</h2>
+                    <table width="60%">
+                        <tr>
+                            <td width="50%">
+                                <div class="label-input">
+                                    <asp:Label Text="Correo electrónico*" runat="server" AssociatedControlID="txt_correo"></asp:Label>
+                                    <asp:TextBox ID="txt_correo" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_correo" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
+                                    <asp:Label Text="Nombre*" runat="server" AssociatedControlID="txt_nombre"></asp:Label>
+                                    <asp:TextBox ID="txt_nombre" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_nombre" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                
+                                <div class="label-input">
+                                    <asp:Label Text="Primer apellido*" runat="server" AssociatedControlID="txt_PApellido"></asp:Label>
+                                    <asp:TextBox ID="txt_PApellido" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_PApellido" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
+                                    <asp:Label Text="Segundo apellido" runat="server" AssociatedControlID="txt_SApellido"></asp:Label>
+                                    <asp:TextBox ID="txt_SApellido" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                </div>
+                            </td>
+                            <td width="50%">
+                                <div class="label-input">
+                                    <asp:Label Text="Cédula*" runat="server" AssociatedControlID="txt_cedula"></asp:Label>
+                                    <asp:TextBox ID="txt_cedula" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_cedula" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
+                                    <asp:Label Text="Contraseña*" runat="server" AssociatedControlID="txt_contraseña"></asp:Label>
+                                    <asp:TextBox ID="txt_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_contraseña" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
+                                    <asp:Label Text="Confirmar contraseña*" runat="server" AssociatedControlID="txt_confirma_contraseña"></asp:Label>
+                                    <asp:TextBox ID="txt_confirma_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_confirma_contraseña" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
+                                    <asp:Label Text="Número de teléfono" runat="server" AssociatedControlID="txt_telefono"></asp:Label>
+                                    <asp:TextBox ID="txt_telefono" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <asp:LinkButton ID="btn_actualizarPerfil" runat="server" CssClass="btn btn-success">
+                        <asp:Literal ID="ltl_actualizarPerfil" runat="server" Text="<span class='glyphicon glyphicon-pencil'></span> Actualizar"></asp:Literal>
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="btn_borrarPerfil" runat="server" CssClass="btn btn-danger">
+                        <asp:Literal ID="ltl_borrarPerfil" runat="server" Text="<span class='glyphicon glyphicon-trash'></span> Eliminar"></asp:Literal>
+                    </asp:LinkButton>
+                </asp:View>
+
+                <asp:View ID="view_Usuarios" runat="server">
+                    <h2>Gestión de Usuarios</h2>
+                    <p>Administra los usuarios registrados en la plataforma</p>
+                </asp:View>
+
+                <asp:View ID="view_Facturas" runat="server">
+                    <asp:Panel runat="server" Width="50%">
+                        <h2>Aprobación de Facturas</h2>
+                        <p>Revisa y aprueba las facturas pendientes</p>
+                        <asp:Label runat="server" AssociatedControlID="txt_Filtro" Text="Filtro"></asp:Label>
+                        <asp:TextBox runat="server" ID="txt_Filtro" Width="90%"></asp:TextBox>
+                    </asp:Panel>
+                </asp:View>
+
+                <asp:View ID="view_Productos" runat="server">
+                    <h2>Gestión de Productos</h2>
+                    <p>Administra los productos inscritos en el programa de beneficios</p>
+                </asp:View>
+
+                <asp:View ID="view_Estadisticas" runat="server">
+                    <h2>Análisis Estadístico</h2>
+                    <p>Visualiza las estadísticas clave de la plataforma</p>
+
+                    <table width="100%">
+                        <tr>
+                            <td width="50%" halign="center">
+                                <asp:Panel runat="server" BackColor="LightGray" HorizontalAlign="Center">
+                                    <h2>Productos más Canjeados</h2>
+                                </asp:Panel>
+                            </td>
+                            <td width="50%">
+                                <asp:Panel runat="server" BackColor="LightGray" HorizontalAlign="Center">
+                                    <h2>Farmacias con más Compras</h2>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                    </table>
+                </asp:View>
+
                 <asp:View ID="ViewResumen" runat="server">
                     <h2>Resumen</h2>
                     <p>Aquí puedes ver  tu balance actual de puntos y próximos canjes disponibles</p>

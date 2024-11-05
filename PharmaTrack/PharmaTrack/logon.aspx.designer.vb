@@ -41,11 +41,20 @@ Partial Public Class _logon
     Protected WithEvents txt_contrasena As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control hpl_iniciosesion.
+    '''Control lbl_msj_error.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents hpl_iniciosesion As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents lbl_msj_error As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control btn_iniciosesion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_iniciosesion As Global.System.Web.UI.WebControls.LinkButton
 End Class

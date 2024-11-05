@@ -25,8 +25,10 @@
                         <asp:TextBox ID="txt_contrasena" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
                     </div>
                     <br />
+                    <asp:Label ID="lbl_msj_error" runat="server" Visible="false" ForeColor="Red"></asp:Label>
                     <br />
-                    <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/pages/Main.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
+                    <br />
+                    <asp:LinkButton ID="btn_iniciosesion" Text="Iniciar sesión" runat="server" CssClass="btn btn-primary"></asp:LinkButton>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
