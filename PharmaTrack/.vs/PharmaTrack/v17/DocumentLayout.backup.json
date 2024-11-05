@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\repopharmatrack\\pharmatrack\\pharmatrack\\pharmatrack\\content\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\content\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\repopharmatrack\\pharmatrack\\pharmatrack\\pharmatrack\\logon.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\logon.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\repopharmatrack\\pharmatrack\\pharmatrack\\pharmatrack\\pages\\mainadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\pages\\mainadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\repopharmatrack\\pharmatrack\\pharmatrack\\pharmatrack\\logon.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\logon.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\pharmatrack\\pages\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\pages\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\pharmatrack\\pages\\mainadmin.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\pages\\mainadmin.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\luis ale\\desktop\\luisale\\tec\\dise\u00F1o\\proyecto\\repopharmatrack\\pharmatrack\\pharmatrack\\pharmatrack\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Content\\style.css",
-              "RelativeDocumentMoniker": "PharmaTrack\\Content\\style.css",
-              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Content\\style.css",
-              "RelativeToolTip": "PharmaTrack\\Content\\style.css",
-              "ViewState": "AgIAAF0FAAAAAAAAAAAcwHkFAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-04T05:38:52.798Z",
+              "Title": "logon.aspx.vb",
+              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\logon.aspx.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\logon.aspx.vb",
+              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\logon.aspx.vb",
+              "RelativeToolTip": "PharmaTrack\\logon.aspx.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-05T05:43:27.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "logon.aspx",
+              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\logon.aspx",
+              "RelativeDocumentMoniker": "PharmaTrack\\logon.aspx",
+              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\logon.aspx",
+              "RelativeToolTip": "PharmaTrack\\logon.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-05T05:43:04.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Main.aspx",
-              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\Main.aspx",
-              "RelativeDocumentMoniker": "PharmaTrack\\pages\\Main.aspx",
-              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\Main.aspx",
-              "RelativeToolTip": "PharmaTrack\\pages\\Main.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-03T23:33:12.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainAdmin.aspx",
-              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\MainAdmin.aspx",
-              "RelativeDocumentMoniker": "PharmaTrack\\pages\\MainAdmin.aspx",
-              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\MainAdmin.aspx",
-              "RelativeToolTip": "PharmaTrack\\pages\\MainAdmin.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-03T21:26:39.685Z",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Web.config",
+              "RelativeDocumentMoniker": "PharmaTrack\\Web.config",
+              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Web.config",
+              "RelativeToolTip": "PharmaTrack\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-05T05:07:36.946Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainAdmin.aspx.vb",
-              "DocumentMoniker": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\MainAdmin.aspx.vb",
-              "RelativeDocumentMoniker": "PharmaTrack\\pages\\MainAdmin.aspx.vb",
-              "ToolTip": "C:\\Users\\Luis Ale\\Desktop\\LuisAle\\TEC\\Dise\u00F1o\\Proyecto\\RepoPharmaTrack\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\MainAdmin.aspx.vb",
-              "RelativeToolTip": "PharmaTrack\\pages\\MainAdmin.aspx.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-03T21:26:54.007Z"
             }
           ]
         }
