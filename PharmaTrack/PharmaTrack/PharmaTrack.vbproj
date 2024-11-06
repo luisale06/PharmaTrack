@@ -195,6 +195,7 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Images\ImagenMedicos.png" />
+    <Content Include="Images\Logo.png" />
     <Content Include="pages\MainAdmin.aspx" />
     <Content Include="pages\Main.aspx" />
     <Content Include="register.aspx" />

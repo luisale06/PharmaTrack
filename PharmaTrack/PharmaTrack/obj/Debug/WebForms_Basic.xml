@@ -253,6 +253,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._Main._txt_correo">
+<summary>
+Control txt_correo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._Main._txt_nombre">
 <summary>
 Control txt_nombre.
@@ -289,24 +298,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_telefono">
-<summary>
-Control txt_telefono.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._Main._txt_correo">
-<summary>
-Control txt_correo.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:PharmaTrack._Main._txt_contraseña">
 <summary>
 Control txt_contraseña.
@@ -319,6 +310,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:PharmaTrack._Main._txt_confirma_contraseña">
 <summary>
 Control txt_confirma_contraseña.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Main._txt_telefono">
+<summary>
+Control txt_telefono.
 </summary>
 <remarks>
 Campo generado automáticamente.
