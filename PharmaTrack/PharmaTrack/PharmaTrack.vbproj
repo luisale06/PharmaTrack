@@ -144,6 +144,7 @@
     <Content Include="Content\Images\clipboard-regular.svg" />
     <Content Include="Content\Images\folder-regular.svg" />
     <Content Include="Content\Images\gears-solid.svg" />
+    <Content Include="Content\Images\ImagenMedicos.png" />
     <Content Include="Content\Images\loader.gif" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\people-group-solid.svg" />
@@ -193,6 +194,7 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Images\ImagenMedicos.png" />
     <Content Include="pages\MainAdmin.aspx" />
     <Content Include="pages\Main.aspx" />
     <Content Include="register.aspx" />

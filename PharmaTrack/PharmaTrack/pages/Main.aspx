@@ -40,7 +40,7 @@
                     <table width="100%">
                         <tr>
                             <td width="30%">
-
+                               
                             </td>
                             <td width="40%">
                                 <asp:Panel runat="server" ID="PanelTotalPuntos" CssClass="panel-redondeado">
@@ -49,10 +49,11 @@
                                 </asp:Panel>
                             </td>
                             <td width="30%">
-
                             </td>
                         </tr>
                     </table>
+                    
+
                 </asp:View>
 
                 <asp:View ID="ViewRegistrarFactura" runat="server">
@@ -104,6 +105,7 @@
                             </tr>
                         </table>
                     </asp:Panel>
+                    <img src="../Images/ImagenMedicos.png" alt="imagen" width="300" height="200" class="Imagen_resumen">
                 </asp:View>
 
                 <asp:View ID="ViewHistorial" runat="server">

@@ -262,6 +262,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._Main._PanelTotalPuntos">
+<summary>
+Control PanelTotalPuntos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._Main._ViewRegistrarFactura">
 <summary>
 Control ViewRegistrarFactura.
