@@ -29,7 +29,7 @@ img {
 .panel-redondeado {
     border-radius: 5px;
     padding: 5px;
-    background-color: #EEEFEF;
+    background-color: white;
     text-align: center;
     padding-bottom: 20px;
     padding-left: 30px;
@@ -38,7 +38,7 @@ img {
 .panel-redondeado-facturas{
     border-radius: 5px;
     padding: 5px;
-    background-color: #EEEFEF;
+    background-color: white;
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;

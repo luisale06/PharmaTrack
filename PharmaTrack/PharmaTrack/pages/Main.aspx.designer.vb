@@ -221,15 +221,6 @@ Partial Public Class _Main
     Protected WithEvents view_Perfil As Global.System.Web.UI.WebControls.View
 
     '''<summary>
-    '''Control txt_correo.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_correo As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Control txt_nombre.
     '''</summary>
     '''<remarks>
@@ -257,6 +248,15 @@ Partial Public Class _Main
     Protected WithEvents txt_SApellido As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control txt_correo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_correo As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control txt_cedula.
     '''</summary>
     '''<remarks>
@@ -264,24 +264,6 @@ Partial Public Class _Main
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txt_cedula As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txt_contraseña.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_contraseña As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txt_confirma_contraseña.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_confirma_contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control txt_telefono.
@@ -345,6 +327,51 @@ Partial Public Class _Main
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ltl_borrarPerfil As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control pnl_AceptCancel.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents pnl_AceptCancel As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control btn_AceptarActualizacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_AceptarActualizacion As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_AceptarActualizacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_AceptarActualizacion As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control btn_CancelarActualizacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_CancelarActualizacion As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_CancelarActualizacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_CancelarActualizacion As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
     '''Control view_Usuarios.

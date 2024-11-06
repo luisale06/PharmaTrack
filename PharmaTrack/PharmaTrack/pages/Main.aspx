@@ -53,51 +53,38 @@
                         <tr>
                             <td width="50%">
                                 <div class="label-input">
-                                    <asp:Label Text="Correo electrónico*" runat="server" AssociatedControlID="txt_correo"></asp:Label>
-                                    <asp:TextBox ID="txt_correo" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ControlToValidate="txt_correo" ForeColor="Red" Font-Bold="true"
-                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
-                                </div>
-                                <div class="label-input">
                                     <asp:Label Text="Nombre*" runat="server" AssociatedControlID="txt_nombre"></asp:Label>
-                                    <asp:TextBox ID="txt_nombre" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:TextBox ID="txt_nombre" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
                                     <asp:RequiredFieldValidator ControlToValidate="txt_nombre" ForeColor="Red" Font-Bold="true"
                                         ErrorMessage="Requerido" Display="Dynamic" runat="server" />
                                 </div>
-                                
                                 <div class="label-input">
                                     <asp:Label Text="Primer apellido*" runat="server" AssociatedControlID="txt_PApellido"></asp:Label>
-                                    <asp:TextBox ID="txt_PApellido" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:TextBox ID="txt_PApellido" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
                                     <asp:RequiredFieldValidator ControlToValidate="txt_PApellido" ForeColor="Red" Font-Bold="true"
                                         ErrorMessage="Requerido" Display="Dynamic" runat="server" />
                                 </div>
                                 <div class="label-input">
                                     <asp:Label Text="Segundo apellido" runat="server" AssociatedControlID="txt_SApellido"></asp:Label>
-                                    <asp:TextBox ID="txt_SApellido" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:TextBox ID="txt_SApellido" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
                                 </div>
                             </td>
                             <td width="50%">
                                 <div class="label-input">
+                                    <asp:Label Text="Correo electrónico*" runat="server" AssociatedControlID="txt_correo"></asp:Label>
+                                    <asp:TextBox ID="txt_correo" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ControlToValidate="txt_correo" ForeColor="Red" Font-Bold="true"
+                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
+                                </div>
+                                <div class="label-input">
                                     <asp:Label Text="Cédula*" runat="server" AssociatedControlID="txt_cedula"></asp:Label>
-                                    <asp:TextBox ID="txt_cedula" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:TextBox ID="txt_cedula" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
                                     <asp:RequiredFieldValidator ControlToValidate="txt_cedula" ForeColor="Red" Font-Bold="true"
                                         ErrorMessage="Requerido" Display="Dynamic" runat="server" />
                                 </div>
                                 <div class="label-input">
-                                    <asp:Label Text="Contraseña*" runat="server" AssociatedControlID="txt_contraseña"></asp:Label>
-                                    <asp:TextBox ID="txt_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ControlToValidate="txt_contraseña" ForeColor="Red" Font-Bold="true"
-                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
-                                </div>
-                                <div class="label-input">
-                                    <asp:Label Text="Confirmar contraseña*" runat="server" AssociatedControlID="txt_confirma_contraseña"></asp:Label>
-                                    <asp:TextBox ID="txt_confirma_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ControlToValidate="txt_confirma_contraseña" ForeColor="Red" Font-Bold="true"
-                                        ErrorMessage="Requerido" Display="Dynamic" runat="server" />
-                                </div>
-                                <div class="label-input">
                                     <asp:Label Text="Número de teléfono" runat="server" AssociatedControlID="txt_telefono"></asp:Label>
-                                    <asp:TextBox ID="txt_telefono" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                                    <asp:TextBox ID="txt_telefono" runat="server" CssClass="form-control" Width="90%" Enabled="false" BackColor="White"></asp:TextBox>
                                 </div>
                             </td>
                         </tr>
@@ -106,14 +93,21 @@
                     <asp:Label ID="lbl_msj_error" runat="server" Visible="false" ForeColor="Red"></asp:Label>
                     <br />
                     <asp:Panel ID="pnl_actualizarPerfil" runat="server">
-                        <asp:LinkButton ID="btn_actualizarPerfil" runat="server" CssClass="btn btn-success">
+                        <asp:LinkButton ID="btn_actualizarPerfil" runat="server" CssClass="btn btn-success" CausesValidation="false">
                             <asp:Literal ID="ltl_actualizarPerfil" runat="server" Text="<span class='glyphicon glyphicon-pencil'></span> Actualizar"></asp:Literal>
                         </asp:LinkButton>
                         <asp:LinkButton ID="btn_borrarPerfil" runat="server" CssClass="btn btn-danger">
                             <asp:Literal ID="ltl_borrarPerfil" runat="server" Text="<span class='glyphicon glyphicon-trash'></span> Eliminar"></asp:Literal>
                         </asp:LinkButton>
                     </asp:Panel>
-                        
+                    <asp:Panel ID="pnl_AceptCancel" runat="server" Visible="False">
+                        <asp:LinkButton ID="btn_AceptarActualizacion" runat="server" CssClass="btn btn-info">
+                            <asp:Literal ID="ltl_AceptarActualizacion" runat="server" Text="<span class='glyphicon glyphicon-ok'></span>"></asp:Literal>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btn_CancelarActualizacion" runat="server" CssClass="btn btn-cancel" CausesValidation="false">
+                            <asp:Literal ID="ltl_CancelarActualizacion" runat="server" Text="<span class='glyphicon glyphicon-remove'></span>"></asp:Literal>
+                        </asp:LinkButton>
+                    </asp:Panel>
                 </asp:View>
 
                 <asp:View ID="view_Usuarios" runat="server">
@@ -174,7 +168,6 @@
                         </tr>
                     </table>
                     
-
                 </asp:View>
 
                 <asp:View ID="ViewRegistrarFactura" runat="server">
