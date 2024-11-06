@@ -86,11 +86,29 @@ Partial Public Class _register
     Protected WithEvents txt_contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control hpl_registro.
+    '''Control txt_confirma_contraseña.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents hpl_registro As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents txt_confirma_contraseña As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lbl_msj_error.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_msj_error As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control btn_registro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_registro As Global.System.Web.UI.WebControls.LinkButton
 End Class

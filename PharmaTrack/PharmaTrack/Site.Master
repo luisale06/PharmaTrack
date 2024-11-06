@@ -42,9 +42,12 @@
             <div class="container">
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
+                        <li><a id="a_inicio" runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li>
+                            <asp:LinkButton ID="btnCerrarSesion" runat="server" Visible="false" Text="Cerrar sesión"></asp:LinkButton>
+                        </li>
                     </ul>
                 </div>
             </div>
