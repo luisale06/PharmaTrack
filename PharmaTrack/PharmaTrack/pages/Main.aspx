@@ -103,12 +103,17 @@
                         </tr>
                     </table>
                     <br />
-                    <asp:LinkButton ID="btn_actualizarPerfil" runat="server" CssClass="btn btn-success">
-                        <asp:Literal ID="ltl_actualizarPerfil" runat="server" Text="<span class='glyphicon glyphicon-pencil'></span> Actualizar"></asp:Literal>
-                    </asp:LinkButton>
-                    <asp:LinkButton ID="btn_borrarPerfil" runat="server" CssClass="btn btn-danger">
-                        <asp:Literal ID="ltl_borrarPerfil" runat="server" Text="<span class='glyphicon glyphicon-trash'></span> Eliminar"></asp:Literal>
-                    </asp:LinkButton>
+                    <asp:Label ID="lbl_msj_error" runat="server" Visible="false" ForeColor="Red"></asp:Label>
+                    <br />
+                    <asp:Panel ID="pnl_actualizarPerfil" runat="server">
+                        <asp:LinkButton ID="btn_actualizarPerfil" runat="server" CssClass="btn btn-success">
+                            <asp:Literal ID="ltl_actualizarPerfil" runat="server" Text="<span class='glyphicon glyphicon-pencil'></span> Actualizar"></asp:Literal>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btn_borrarPerfil" runat="server" CssClass="btn btn-danger">
+                            <asp:Literal ID="ltl_borrarPerfil" runat="server" Text="<span class='glyphicon glyphicon-trash'></span> Eliminar"></asp:Literal>
+                        </asp:LinkButton>
+                    </asp:Panel>
+                        
                 </asp:View>
 
                 <asp:View ID="view_Usuarios" runat="server">

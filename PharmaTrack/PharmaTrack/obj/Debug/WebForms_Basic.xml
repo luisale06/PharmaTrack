@@ -325,6 +325,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._Main._lbl_msj_error">
+<summary>
+Control lbl_msj_error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._Main._btn_actualizarPerfil">
 <summary>
 Control btn_actualizarPerfil.

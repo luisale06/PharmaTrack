@@ -293,6 +293,24 @@ Partial Public Class _Main
     Protected WithEvents txt_telefono As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control lbl_msj_error.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_msj_error As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control pnl_actualizarPerfil.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents pnl_actualizarPerfil As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
     '''Control btn_actualizarPerfil.
     '''</summary>
     '''<remarks>
