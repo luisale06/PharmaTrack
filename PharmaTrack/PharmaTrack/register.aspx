@@ -50,13 +50,13 @@
                     </div>
                     <div class="label-input">
                         <asp:Label Text="Contraseña*" runat="server" AssociatedControlID="txt_contraseña"></asp:Label>
-                        <asp:TextBox ID="txt_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                        <asp:TextBox ID="txt_contraseña" runat="server" CssClass="form-control" Width="90%" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ControlToValidate="txt_contraseña" ForeColor="Red" Font-Bold="true"
                             ErrorMessage="Requerido" Display="Dynamic" runat="server" />
                     </div>
                     <div class="label-input">
                         <asp:Label Text="Confirmar contraseña*" runat="server" AssociatedControlID="txt_confirma_contraseña"></asp:Label>
-                        <asp:TextBox ID="txt_confirma_contraseña" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                        <asp:TextBox ID="txt_confirma_contraseña" runat="server" CssClass="form-control" Width="90%" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ControlToValidate="txt_confirma_contraseña" ForeColor="Red" Font-Bold="true"
                             ErrorMessage="Requerido" Display="Dynamic" runat="server" />
                     </div>

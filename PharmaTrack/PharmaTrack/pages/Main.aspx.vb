@@ -23,7 +23,7 @@ Public Class _Main
             End Select
         End If
     End Sub
-    Protected Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
+    Protected Sub btnAceptarActualizar_Click(sender As Object, e As EventArgs) Handles btn_AceptarActualizacion.Click
 
         Dim nombre As String = txt_nombre.Text.Trim()
         Dim primerApellido As String = txt_PApellido.Text.Trim()
@@ -31,14 +31,6 @@ Public Class _Main
         Dim cedula As String = txt_cedula.Text.Trim()
         Dim telefono As String = txt_telefono.Text.Trim()
         Dim correo As String = txt_correo.Text.Trim()
-        Dim contrasena As String = txt_contraseña.Text.Trim()
-        Dim confirmarContrasena As String = txt_confirma_contraseña.Text.Trim()
-
-        If contrasena <> confirmarContrasena Then
-            lbl_msj_error.Text = "Las contraseñas no coinciden. Por favor, verifique."
-            lbl_msj_error.Visible = True
-            Return
-        End If
 
         Dim PharmaConnectionString As String = WebConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString
 
@@ -52,8 +44,8 @@ Public Class _Main
             comando.Parameters.AddWithValue("@Cedula", cedula)
             comando.Parameters.AddWithValue("@Telefono", telefono)
             comando.Parameters.AddWithValue("@Correo", correo)
-            comando.Parameters.AddWithValue("@Contrasena", contrasena)
             comando.Parameters.AddWithValue("@Operacion", 2)
+            comando.Parameters.AddWithValue("@Id", Session("UserId"))
 
             Try
                 conexion.Open()
@@ -61,6 +53,15 @@ Public Class _Main
                 lbl_msj_error.Text = "Información del usuario actualizada exitosamente."
                 lbl_msj_error.ForeColor = System.Drawing.Color.Green
                 lbl_msj_error.Visible = True
+                txt_nombre.Enabled = False
+                txt_PApellido.Enabled = False
+                txt_SApellido.Enabled = False
+                txt_cedula.Enabled = False
+                txt_telefono.Enabled = False
+                txt_correo.Enabled = False
+
+                pnl_AceptCancel.Visible = False
+                pnl_actualizarPerfil.Visible = True
             Catch ex As Exception
                 lbl_msj_error.Text = "Error al actualizar la información del usuario"
                 lbl_msj_error.ForeColor = System.Drawing.Color.Red
@@ -88,9 +89,6 @@ Public Class _Main
                     txt_cedula.Text = reader("Cedula").ToString()
                     txt_telefono.Text = reader("Telefono").ToString()
                     txt_correo.Text = reader("Correo").ToString()
-                    ' Para seguridad, puedes optar por no llenar el campo de contraseña aquí.
-                    txt_contraseña.Text = ""
-                    txt_confirma_contraseña.Text = ""
                 Else
                     lbl_msj_error.Text = "Usuario no encontrado."
                     lbl_msj_error.ForeColor = System.Drawing.Color.Red
@@ -103,7 +101,30 @@ Public Class _Main
             End Try
         End Using
     End Sub
+    Protected Sub btn_actualizarPerfil_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
 
+        txt_nombre.Enabled = True
+        txt_PApellido.Enabled = True
+        txt_SApellido.Enabled = True
+        txt_cedula.Enabled = True
+        txt_telefono.Enabled = True
+        txt_correo.Enabled = True
+
+        pnl_AceptCancel.Visible = True
+        pnl_actualizarPerfil.Visible = False
+    End Sub
+    Protected Sub btn_cancelarActualizacion_Click(sender As Object, e As EventArgs) Handles btn_CancelarActualizacion.Click
+        CargarDatosUsuario(Session("UserId"))
+        txt_nombre.Enabled = False
+        txt_PApellido.Enabled = False
+        txt_SApellido.Enabled = False
+        txt_cedula.Enabled = False
+        txt_telefono.Enabled = False
+        txt_correo.Enabled = False
+
+        pnl_AceptCancel.Visible = False
+        pnl_actualizarPerfil.Visible = True
+    End Sub
     Protected Sub btn_Perfil_Click(ByVal sender As Object, ByVal e As EventArgs)
         MultiViewMain.ActiveViewIndex = 0
     End Sub

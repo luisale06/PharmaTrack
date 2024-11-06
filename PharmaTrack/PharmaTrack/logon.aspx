@@ -22,7 +22,7 @@
                     </div>
                     <div class="label-input">
                         <asp:Label Text="Contraseña" runat="server" AssociatedControlID="txt_contrasena"></asp:Label>
-                        <asp:TextBox ID="txt_contrasena" runat="server" CssClass="form-control" Width="90%"></asp:TextBox>
+                        <asp:TextBox ID="txt_contrasena" runat="server" CssClass="form-control" Width="90%" TextMode="Password"></asp:TextBox>
                     </div>
                     <br />
                     <asp:Label ID="lbl_msj_error" runat="server" Visible="false" ForeColor="Red"></asp:Label>
