@@ -6,11 +6,15 @@ Public Class _Main
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            hdf_Usuario.Value = Session("UserId")
             CargarDatosUsuario(Session("UserId"))
+            CargarPuntaje()
+            hdf_Usuario.Value = Session("UserId")
+            lbl_NombreMain.Text = Session("UserNombre")
+            lbl_PuntajeTotal.Text = Session("UserPuntajeTotal")
             pnl_MainAdmin.Visible = False
             pnl_MainOperativo.Visible = False
             pnl_MainCliente.Visible = False
+            Form.DefaultButton = Me.lnk_Buscar.UniqueID
 
             Dim rol As Integer = Convert.ToInt32(Session("Rol"))
 
@@ -23,6 +27,13 @@ Public Class _Main
                     pnl_MainCliente.Visible = True
             End Select
         End If
+    End Sub
+    Protected Sub lnk_Buscar_Click(sender As Object, e As EventArgs) Handles lnk_Buscar.Click
+        SqlDataSourceFacturasTodas.DataBind()
+    End Sub
+    Protected Sub lnk_limpiar_Click(sender As Object, e As EventArgs)
+        txt_filtro.Text = ""
+        SqlDataSourceFacturasTodas.DataBind()
     End Sub
     Protected Sub btn_AceptarFactura_Click(sender As Object, e As EventArgs) Handles btn_AceptarFactura.Click
         Dim medicamento As String = ddl_Producto.SelectedValue
@@ -41,7 +52,6 @@ Public Class _Main
             comando.Parameters.AddWithValue("@Cantidad", cantidad)
             comando.Parameters.AddWithValue("@FechaRegistro", fechaRegistro)
             comando.Parameters.AddWithValue("@IdEstado", 1)
-            comando.Parameters.AddWithValue("@Operacion", 1)
             comando.Parameters.AddWithValue("@IdUsuario", Session("UserId"))
 
             Try
@@ -95,6 +105,8 @@ Public Class _Main
                 lbl_msj_error.Text = "Información del usuario actualizada exitosamente."
                 lbl_msj_error.ForeColor = System.Drawing.Color.Green
                 lbl_msj_error.Visible = True
+                Session("UserNombre") = nombre + " " + primerApellido
+                lbl_NombreMain.Text = nombre + " " + primerApellido
                 txt_nombre.Enabled = False
                 txt_PApellido.Enabled = False
                 txt_SApellido.Enabled = False
@@ -143,6 +155,29 @@ Public Class _Main
             End Try
         End Using
     End Sub
+    Private Function CargarPuntaje() As Integer
+        Dim puntajeTotal As Integer = 0
+        Dim userId As Integer = Convert.ToInt32(Session("UserId"))
+
+        Using conn As New SqlConnection(ConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString)
+            Using cmd As New SqlCommand("Calcula_Puntaje", conn)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@IdUsuario", userId)
+
+                conn.Open()
+                Dim result As Object = cmd.ExecuteScalar()
+                conn.Close()
+
+                If result IsNot Nothing AndAlso Not IsDBNull(result) Then
+                    puntajeTotal = Convert.ToInt32(result)
+                    Session("UserPuntajeTotal") = puntajeTotal
+                    lbl_PuntajeTotal.Text = puntajeTotal.ToString
+                End If
+            End Using
+        End Using
+
+        Return puntajeTotal
+    End Function
     Protected Sub btn_actualizarPerfil_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
 
         txt_nombre.Enabled = True

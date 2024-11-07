@@ -41,6 +41,15 @@ Partial Public Class _Main
     Protected WithEvents ltl_perfil As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
+    '''Control lbl_NombreMain.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_NombreMain As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control pnl_MainAdmin.
     '''</summary>
     '''<remarks>
@@ -401,13 +410,76 @@ Partial Public Class _Main
     Protected WithEvents view_Facturas As Global.System.Web.UI.WebControls.View
 
     '''<summary>
-    '''Control txt_Filtro.
+    '''Control lbl_Filtro.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Filtro As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents lbl_Filtro As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txt_filtro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_filtro As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lnk_Buscar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnk_Buscar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_buscar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_buscar As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control lnk_limpiar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnk_limpiar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_limpiar_busqueda.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_limpiar_busqueda As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control gv_FacturasAprobacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gv_FacturasAprobacion As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourceFacturasTodas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceFacturasTodas As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control view_Productos.
@@ -444,6 +516,15 @@ Partial Public Class _Main
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents PanelTotalPuntos As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control lbl_PuntajeTotal.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_PuntajeTotal As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control ViewRegistrarFactura.
