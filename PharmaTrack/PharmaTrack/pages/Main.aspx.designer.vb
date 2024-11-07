@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class _Main
 
     '''<summary>
+    '''Control hdf_Usuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents hdf_Usuario As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
     '''Control BtnPerfil.
     '''</summary>
     '''<remarks>
@@ -446,33 +455,6 @@ Partial Public Class _Main
     Protected WithEvents ViewRegistrarFactura As Global.System.Web.UI.WebControls.View
 
     '''<summary>
-    '''Control ddl_farmacia.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ddl_farmacia As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Control txt_FechaCompra.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_FechaCompra As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txt_NumeroFactura.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_NumeroFactura As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Control ddl_Producto.
     '''</summary>
     '''<remarks>
@@ -480,6 +462,15 @@ Partial Public Class _Main
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddl_Producto As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control SqlDataSourceMedicamentos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceMedicamentos As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control txt_Cantidad.
@@ -491,6 +482,33 @@ Partial Public Class _Main
     Protected WithEvents txt_Cantidad As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control ddl_farmacia.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ddl_farmacia As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control SqlDataSourceFarmacias.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceFarmacias As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control txt_FechaRegistro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_FechaRegistro As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control txt_ImagenFactura.
     '''</summary>
     '''<remarks>
@@ -500,6 +518,87 @@ Partial Public Class _Main
     Protected WithEvents txt_ImagenFactura As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control lbl_error_factura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_error_factura As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control pnl_EditarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents pnl_EditarFactura As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control btn_AgregarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_AgregarFactura As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_AgregarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_AgregarFactura As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control pnl_AceptCancelFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents pnl_AceptCancelFactura As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control btn_AceptarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_AceptarFactura As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_AceptarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_AceptarFactura As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control btn_CancelarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_CancelarFactura As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_CancelarFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_CancelarFactura As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
     '''Control ViewHistorial.
     '''</summary>
     '''<remarks>
@@ -507,6 +606,24 @@ Partial Public Class _Main
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ViewHistorial As Global.System.Web.UI.WebControls.View
+
+    '''<summary>
+    '''Control gv_Facturas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gv_Facturas As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourceFacturas.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceFacturas As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control ViewCanjear.

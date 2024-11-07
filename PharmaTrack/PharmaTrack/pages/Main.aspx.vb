@@ -6,6 +6,7 @@ Public Class _Main
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         If Not IsPostBack Then
+            hdf_Usuario.Value = Session("UserId")
             CargarDatosUsuario(Session("UserId"))
             pnl_MainAdmin.Visible = False
             pnl_MainOperativo.Visible = False
@@ -22,6 +23,47 @@ Public Class _Main
                     pnl_MainCliente.Visible = True
             End Select
         End If
+    End Sub
+    Protected Sub btn_AceptarFactura_Click(sender As Object, e As EventArgs) Handles btn_AceptarFactura.Click
+        Dim medicamento As String = ddl_Producto.SelectedValue
+        Dim cantidad As String = txt_Cantidad.Text.Trim()
+        Dim farmacia As String = ddl_farmacia.SelectedValue
+        Dim fechaRegistro As String = txt_FechaRegistro.Text.Trim()
+
+        Dim PharmaConnectionString As String = WebConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString
+
+        Using conexion As New SqlConnection(PharmaConnectionString)
+            Dim comando As New SqlCommand("Man_Facturas", conexion)
+            comando.CommandType = CommandType.StoredProcedure
+
+            comando.Parameters.AddWithValue("@IdMedicamento", medicamento)
+            comando.Parameters.AddWithValue("@IdFarmacia", farmacia)
+            comando.Parameters.AddWithValue("@Cantidad", cantidad)
+            comando.Parameters.AddWithValue("@FechaRegistro", fechaRegistro)
+            comando.Parameters.AddWithValue("@IdEstado", 1)
+            comando.Parameters.AddWithValue("@Operacion", 1)
+            comando.Parameters.AddWithValue("@IdUsuario", Session("UserId"))
+
+            Try
+                conexion.Open()
+                comando.ExecuteNonQuery()
+                lbl_error_factura.Text = "Información de la factura ingresada correctamente"
+                lbl_error_factura.ForeColor = System.Drawing.Color.Green
+                lbl_error_factura.Visible = True
+                ddl_farmacia.Enabled = False
+                txt_FechaRegistro.Enabled = False
+                ddl_Producto.Enabled = False
+                txt_Cantidad.Enabled = False
+                txt_ImagenFactura.Enabled = False
+
+                pnl_AceptCancelFactura.Visible = False
+                pnl_EditarFactura.Visible = True
+            Catch ex As Exception
+                lbl_error_factura.Text = "Error al actualizar la información del usuario"
+                lbl_error_factura.ForeColor = System.Drawing.Color.Red
+                lbl_error_factura.Visible = True
+            End Try
+        End Using
     End Sub
     Protected Sub btnAceptarActualizar_Click(sender As Object, e As EventArgs) Handles btn_AceptarActualizacion.Click
 
@@ -113,6 +155,16 @@ Public Class _Main
         pnl_AceptCancel.Visible = True
         pnl_actualizarPerfil.Visible = False
     End Sub
+    Protected Sub btn_AgregarFactura_Click(sender As Object, e As EventArgs) Handles btn_AgregarFactura.Click
+        ddl_farmacia.Enabled = True
+        txt_FechaRegistro.Enabled = True
+        ddl_Producto.Enabled = True
+        txt_Cantidad.Enabled = True
+        txt_ImagenFactura.Enabled = True
+
+        pnl_AceptCancelFactura.Visible = True
+        pnl_EditarFactura.Visible = False
+    End Sub
     Protected Sub btn_cancelarActualizacion_Click(sender As Object, e As EventArgs) Handles btn_CancelarActualizacion.Click
         CargarDatosUsuario(Session("UserId"))
         txt_nombre.Enabled = False
@@ -124,6 +176,16 @@ Public Class _Main
 
         pnl_AceptCancel.Visible = False
         pnl_actualizarPerfil.Visible = True
+    End Sub
+    Protected Sub btn_CancelarFactura_Click(sender As Object, e As EventArgs) Handles btn_CancelarFactura.Click
+        ddl_farmacia.Enabled = False
+        txt_FechaRegistro.Enabled = False
+        ddl_Producto.Enabled = False
+        txt_Cantidad.Enabled = False
+        txt_ImagenFactura.Enabled = False
+
+        pnl_AceptCancelFactura.Visible = False
+        pnl_EditarFactura.Visible = True
     End Sub
     Protected Sub btn_Perfil_Click(ByVal sender As Object, ByVal e As EventArgs)
         MultiViewMain.ActiveViewIndex = 0
