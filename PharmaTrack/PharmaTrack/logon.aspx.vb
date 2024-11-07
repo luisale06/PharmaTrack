@@ -31,6 +31,7 @@ Public Class _logon
                     If reader.Read() Then
                         Session("UserId") = reader("Id")
                         Session("Rol") = reader("Rol")
+                        Session("UserNombre") = reader("NombreCliente")
                         Response.Redirect("~/pages/Main.aspx")
                     Else
                         lbl_msj_error.Text = "Usuario o contraseña incorrectos."

@@ -8,9 +8,18 @@
     <br />
     <main>
         <div>
-            <asp:LinkButton ID="BtnPerfil" CssClass="btn btn-cancel btn-circle" runat="server" OnClick="btn_Perfil_Click">
-                <asp:Literal ID="ltl_perfil" runat="server" Text="<span class='glyphicon glyphicon-user icon-large'></span>"></asp:Literal>
-            </asp:LinkButton>
+            <table>
+                <tr>
+                    <td width="30%">
+                        <asp:LinkButton ID="BtnPerfil" CssClass="btn btn-cancel btn-circle" runat="server" OnClick="btn_Perfil_Click">
+                            <asp:Literal ID="ltl_perfil" runat="server" Text="<span class='glyphicon glyphicon-user icon-large'></span>"></asp:Literal>
+                        </asp:LinkButton>
+                    </td>
+                    <td width="70%">
+                        <asp:Label ID="lbl_NombreMain" runat="server" Font-Bold="true" Font-Size="Large" ></asp:Label>
+                    </td>
+                </tr>
+            </table>
             <br />
             <br />
             <asp:Panel runat="server" ID="pnl_MainAdmin" Visible="false">
@@ -117,11 +126,99 @@
                 </asp:View>
 
                 <asp:View ID="view_Facturas" runat="server">
-                    <asp:Panel runat="server" Width="50%">
+                    <asp:Panel runat="server" Width="80%">
                         <h2>Aprobación de Facturas</h2>
                         <p>Revisa y aprueba las facturas pendientes</p>
-                        <asp:Label runat="server" AssociatedControlID="txt_Filtro" Text="Filtro"></asp:Label>
-                        <asp:TextBox runat="server" ID="txt_Filtro" Width="90%"></asp:TextBox>
+                        <div class="label-input">
+                            <asp:Label ID="lbl_Filtro" AssociatedControlID="txt_filtro" runat="server" Text="Filtro" CssClass="form-label"></asp:Label>
+                            <asp:TextBox ID="txt_filtro" runat="server" CssClass="form-control" Width="30%"></asp:TextBox>
+                        </div>
+                        <asp:LinkButton ID="lnk_Buscar" CssClass="btn btn-iica-blue-light" runat="server">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <asp:Literal ID="ltl_buscar" runat="server" Text="Buscar"></asp:Literal>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="lnk_limpiar" CssClass="btn btn-iica-blue-light" Text="Limpiar Busqueda" OnClick="lnk_limpiar_Click" runat="server">
+                            <span class="glyphicon glyphicon-zoom-out"></span>
+                            <asp:Literal ID="ltl_limpiar_busqueda" runat="server" Text="Limpiar Busqueda"></asp:Literal>
+                        </asp:LinkButton>
+                        <asp:GridView ID="gv_FacturasAprobacion" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
+                                DataSourceID="SqlDataSourceFacturasTodas" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
+                        <Columns>
+                            <asp:TemplateField ShowHeader="False">
+                                <EditItemTemplate>
+                                    <asp:LinkButton ID="imgBtn_Aceptar_Factura" ToolTip="Confirmar" CssClass="btn btn-info" ValidationGroup="Estado"
+                                            runat="server" CommandName="Update">
+                                            <span class="glyphicon glyphicon-ok"></span> </asp:LinkButton>
+                                    <asp:LinkButton ID="imgBtn_Cancel_Factura" ToolTip="Cancelar" CausesValidation="False" CssClass="btn btn-cancel"
+                                        runat="server" CommandName="Cancel">
+                                        <span class="glyphicon glyphicon-remove"></span </asp:LinkButton>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="imgBtn_Editar_Factura" ToolTip="Editar" CssClass="btn btn-success" runat="server"
+                                        CommandName="Edit">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </asp:LinkButton>
+                                </ItemTemplate>
+                                <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="15%" />
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Medicamento">
+                                <ItemTemplate>
+                                    <%# Eval("NombreMedicamento") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Cantidad">
+                                <ItemTemplate>
+                                    <%# Eval("Cantidad") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Puntaje">
+                                <ItemTemplate>
+                                    <%# Eval("Puntaje") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Farmacia">
+                                <ItemTemplate>
+                                    <%# Eval("NombreFarmacia") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Cliente">
+                                <ItemTemplate>
+                                    <%# Eval("Cliente") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Fecha">
+                                <ItemTemplate>
+                                    <%#Eval("FechaRegistro", "{0:d}") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Estado">
+                                <ItemTemplate>
+                                    <%# Eval("Estado") %>
+                                </ItemTemplate>
+                                <EditItemTemplate>
+                                    <asp:DropDownList runat="server" ID="ddl_Estado" CssClass="form-control" BackColor="White" Width="90%"
+                                        DataSourceID="SqlDataSourceEstado" DataTextField="Estado" DataValueField="Id" SelectedValue='<%# Bind("IdEstado") %>'></asp:DropDownList>
+                                    <asp:SqlDataSource ID="SqlDataSourceEstado" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
+                                        SelectCommand="Get_EstadoFactura" SelectCommandType="StoredProcedure">
+                                        <SelectParameters>
+                                            <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="1" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                    <asp:RequiredFieldValidator ControlToValidate="ddl_Estado" ForeColor="Red" Font-Bold="true"
+                                        InitialValue="0" ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="Estado"/>
+                                </EditItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourceFacturasTodas" runat="server"
+                        ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
+                        SelectCommand="Get_Facturas" SelectCommandType="StoredProcedure"
+                        UpdateCommand="Update_FacturaEstado" UpdateCommandType="StoredProcedure">
+                        <SelectParameters>
+                            <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="0" />
+                            <asp:controlparameter Name="Filtro" ControlID="txt_filtro" DefaultValue=" " PropertyName="Text" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                     </asp:Panel>
                 </asp:View>
 
@@ -161,7 +258,7 @@
                             <td width="40%">
                                 <asp:Panel runat="server" ID="PanelTotalPuntos" CssClass="panel-redondeado">
                                     <h3>Total de puntos:</h3>
-                                    <asp:Label runat="server" ForeColor="Green" Text="*Puntos*" Font-Size="30px"></asp:Label>
+                                    <asp:Label ID="lbl_PuntajeTotal" runat="server" ForeColor="Green" Text=" " Font-Size="30px"></asp:Label>
                                 </asp:Panel>
                             </td>
                             <td width="30%">
@@ -271,11 +368,6 @@
                                     <%# Eval("NombreFarmacia") %>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Cliente">
-                                <ItemTemplate>
-                                    <%# Eval("Cliente") %>
-                                </ItemTemplate>
-                            </asp:TemplateField>
                             <asp:TemplateField HeaderText="Fecha">
                                 <ItemTemplate>
                                     <%#Eval("FechaRegistro", "{0:d}") %>
@@ -293,6 +385,7 @@
                         <SelectParameters>
                             <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="1" />
                             <asp:ControlParameter ControlID="hdf_Usuario" Name="IdUsuario" PropertyName="Value" Type="Int32" />
+                            <asp:controlparameter Name="Filtro" ControlID="txt_filtro" DefaultValue=" " PropertyName="Text" Type="String" />
                         </SelectParameters>
                     </asp:SqlDataSource>
                 </asp:View>
