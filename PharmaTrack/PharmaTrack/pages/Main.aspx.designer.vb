@@ -401,6 +401,78 @@ Partial Public Class _Main
     Protected WithEvents view_Usuarios As Global.System.Web.UI.WebControls.View
 
     '''<summary>
+    '''Control lbl_FiltroUsuarios.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_FiltroUsuarios As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txt_filtroUsuarios.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_filtroUsuarios As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lnk_BuscarUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnk_BuscarUsuario As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_buscarUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_buscarUsuario As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control lnk_limpiarUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnk_limpiarUsuario As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control ltl_limpiar_busquedaUsuario.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ltl_limpiar_busquedaUsuario As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
+    '''Control gv_UsuariosAdmin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gv_UsuariosAdmin As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourceUsuariosTodos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceUsuariosTodos As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''Control view_Facturas.
     '''</summary>
     '''<remarks>
