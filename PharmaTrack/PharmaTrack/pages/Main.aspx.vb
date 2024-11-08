@@ -35,6 +35,14 @@ Public Class _Main
         txt_filtro.Text = ""
         SqlDataSourceFacturasTodas.DataBind()
     End Sub
+    Protected Sub lnk_BuscarUsuario_Click(sender As Object, e As EventArgs) Handles lnk_BuscarUsuario.Click
+        SqlDataSourceUsuariosTodos.DataBind()
+    End Sub
+    Protected Sub lnk_limpiarUsuario_Click(sender As Object, e As EventArgs)
+        txt_filtroUsuarios.Text = ""
+        SqlDataSourceUsuariosTodos.DataBind()
+    End Sub
+
     Protected Sub btn_AceptarFactura_Click(sender As Object, e As EventArgs) Handles btn_AceptarFactura.Click
         Dim medicamento As String = ddl_Producto.SelectedValue
         Dim cantidad As String = txt_Cantidad.Text.Trim()

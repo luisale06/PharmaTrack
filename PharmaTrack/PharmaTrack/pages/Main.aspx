@@ -123,6 +123,136 @@
                 <asp:View ID="view_Usuarios" runat="server">
                     <h2>Gestión de Usuarios</h2>
                     <p>Administra los usuarios registrados en la plataforma</p>
+                    <div class="label-input">
+                        <asp:Label ID="lbl_FiltroUsuarios" AssociatedControlID="txt_filtroUsuarios" runat="server" Text="Filtro" CssClass="form-label"></asp:Label>
+                        <asp:TextBox ID="txt_filtroUsuarios" runat="server" CssClass="form-control" Width="30%"></asp:TextBox>
+                    </div>
+                    <asp:LinkButton ID="lnk_BuscarUsuario" CssClass="btn btn-iica-blue-light" runat="server">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <asp:Literal ID="ltl_buscarUsuario" runat="server" Text="Buscar"></asp:Literal>
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="lnk_limpiarUsuario" CssClass="btn btn-iica-blue-light" Text="Limpiar Busqueda" OnClick="lnk_limpiarUsuario_Click" runat="server">
+                        <span class="glyphicon glyphicon-zoom-out"></span>
+                        <asp:Literal ID="ltl_limpiar_busquedaUsuario" runat="server" Text="Limpiar Busqueda"></asp:Literal>
+                    </asp:LinkButton>
+                    <asp:UpdatePanel runat="server">
+                        <ContentTemplate>
+                            <asp:GridView ID="gv_UsuariosAdmin" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
+                                DataSourceID="SqlDataSourceUsuariosTodos" CssClass="table table-bordered table-hover  margin-top-20"
+                                AllowPaging="True" PageSize="10">
+                                <Columns>
+                                    <asp:TemplateField ShowHeader="False">
+                                        <EditItemTemplate>
+                                            <asp:LinkButton ID="imgBtn_Aceptar_Usuario" ToolTip="Confirmar" CssClass="btn btn-info" ValidationGroup="AdminPerfil"
+                                                runat="server" CommandName="Update">
+                                            <span class="glyphicon glyphicon-ok"></span> </asp:LinkButton>
+                                            <asp:LinkButton ID="imgBtn_Cancel_Usuario" ToolTip="Cancelar" CausesValidation="False" CssClass="btn btn-cancel"
+                                                runat="server" CommandName="Cancel">
+                                        <span class="glyphicon glyphicon-remove"></span </asp:LinkButton>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:LinkButton ID="imgBtn_Editar_Usuario" ToolTip="Editar" CssClass="btn btn-success" runat="server"
+                                                CommandName="Edit">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                            </asp:LinkButton>
+                                        </ItemTemplate>
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="10%" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Nombre">
+                                        <ItemTemplate>
+                                            <%# Eval("Nombre") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_NombreAdmin" runat="server" Text='<%# Bind("Nombre") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ControlToValidate="txt_NombreAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil" />
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Primer Apellido">
+                                        <ItemTemplate>
+                                            <%# Eval("Apellido1") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_Apellido1Admin" runat="server" Text='<%# Bind("Apellido1") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ControlToValidate="txt_Apellido1Admin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil" />
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Segundo Apellido">
+                                        <ItemTemplate>
+                                            <%# Eval("Apellido2") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_Apellido2Admin" runat="server" Text='<%# Bind("Apellido2") %>' CssClass="form-control"></asp:TextBox>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Cedula">
+                                        <ItemTemplate>
+                                            <%# Eval("Cedula") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_CedulaAdmin" runat="server" Text='<%# Bind("Cedula") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ControlToValidate="txt_CedulaAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil" />
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Correo">
+                                        <ItemTemplate>
+                                            <%# Eval("Correo") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_CorreoAdmin" runat="server" Text='<%# Bind("Correo") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ControlToValidate="txt_CorreoAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil" />
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Telefono">
+                                        <ItemTemplate>
+                                            <%#Eval("Telefono") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_TelefonoAdmin" runat="server" Text='<%# Bind("Telefono") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RegularExpressionValidator ControlToValidate="txt_TelefonoAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Solo se permiten números" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil"
+                                                ValidationExpression="^\d+$" />
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Rol">
+                                        <ItemTemplate>
+                                            <%# Eval("NombreRol") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList runat="server" ID="ddl_RolAdmin" CssClass="form-control"
+                                                DataSourceID="SqlDataSourceRol" DataTextField="NombreRol" DataValueField="Id" SelectedValue='<%# Bind("Rol") %>'>
+                                            </asp:DropDownList>
+                                            <asp:SqlDataSource ID="SqlDataSourceRol" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>"
+                                                SelectCommand="Get_Rol" SelectCommandType="StoredProcedure">
+                                                <SelectParameters>
+                                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="1" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+                                            <asp:RequiredFieldValidator ControlToValidate="ddl_RolAdmin" ForeColor="Red" Font-Bold="true"
+                                                InitialValue="0" ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminPerfil" />
+                                        </EditItemTemplate>
+                                        <ItemStyle Width="15%" />
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSourceUsuariosTodos" runat="server"
+                                ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>"
+                                SelectCommand="Get_Usuarios" SelectCommandType="StoredProcedure"
+                                UpdateCommand="Man_Usuarios" UpdateCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="0" />
+                                    <asp:Parameter Name="Usuario" Type="Int32" DefaultValue="0" />
+                                    <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
+                                </SelectParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="2" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
                 </asp:View>
 
                 <asp:View ID="view_Facturas" runat="server">
