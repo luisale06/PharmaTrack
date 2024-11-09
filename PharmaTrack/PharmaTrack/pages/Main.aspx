@@ -355,6 +355,95 @@
                 <asp:View ID="view_Productos" runat="server">
                     <h2>Gestión de Productos</h2>
                     <p>Administra los productos inscritos en el programa de beneficios</p>
+                    <asp:UpdatePanel runat="server">
+                        <ContentTemplate>
+                            <asp:GridView ID="gv_ProductosAdmin" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
+                                DataSourceID="SqlDataSourceMedicamentosParticipantes" CssClass="table table-bordered table-hover  margin-top-20"
+                                AllowPaging="True" PageSize="10" Width="60%">
+                                <Columns>
+                                    <asp:TemplateField ShowHeader="False">
+                                        <EditItemTemplate>
+                                            <asp:LinkButton ID="imgBtn_Aceptar_Producto" ToolTip="Confirmar" CssClass="btn btn-info" ValidationGroup="AdminProducto"
+                                                runat="server" CommandName="Update">
+                                            <span class="glyphicon glyphicon-ok"></span> </asp:LinkButton>
+                                            <asp:LinkButton ID="imgBtn_Cancel_Producto" ToolTip="Cancelar" CausesValidation="False" CssClass="btn btn-cancel"
+                                                runat="server" CommandName="Cancel">
+                                            <span class="glyphicon glyphicon-remove"></span </asp:LinkButton>
+                                            <asp:HiddenField ID="hdf_OperacionMedicamentosParticipantes" Value='<%# Bind("Operacion") %>' runat="server"/>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:LinkButton ID="imgBtn_Editar_Producto" ToolTip="Editar" CssClass="btn btn-success" runat="server"
+                                                CommandName="Edit" Visible='<%#IIf(Eval("Visible") = 2, "True", "False")%>'>
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </asp:LinkButton>
+                                            <asp:LinkButton ID="imgBtn_NuevoHistorico" ToolTip="Agregar nuevo" CssClass="btn btn-primary"
+                                                runat="server" CommandName="Edit" Visible='<%#IIf(Eval("Visible") = 1, "True", "False")%>'>
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                            </asp:LinkButton>
+                                            <asp:LinkButton ID="imgBtn_EliminarHistorico" ToolTip="Eliminar" CssClass="btn btn-danger" runat="server" CommandName="Delete"
+                                                OnClientClick="return confirm('¿Eliminar medicamento del programa de beneficios?');" Visible='<%#IIf(Eval("Visible") = 2, "True", "False")%>'>
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                            </asp:LinkButton>
+                                        </ItemTemplate>
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="20%" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Precio">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lbl_PrecioMedicamentoAdmin" runat="server" Text='<%# Eval("Precio") %>'
+                                               Visible='<%#IIf(Eval("Visible") = 2, "True", "False")%>'></asp:Label>
+                                        </ItemTemplate>
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="15%" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Puntaje">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lbl_PuntajeMedicamentoAdmin" runat="server" Text='<%# Eval("Puntaje") %>'
+                                               Visible='<%#IIf(Eval("Visible") = 2, "True", "False")%>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txt_PuntajeAdmin" runat="server" Text='<%# Bind("Puntaje") %>' CssClass="form-control"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ControlToValidate="txt_PuntajeAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminProducto" />
+                                            <asp:RegularExpressionValidator ControlToValidate="txt_PuntajeAdmin" ForeColor="Red" Font-Bold="true"
+                                                ErrorMessage="Solo se permiten números" Display="Dynamic" runat="server" ValidationGroup="AdminProducto"
+                                                ValidationExpression="^\d+$" />
+                                        </EditItemTemplate>
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Top" Width="15%" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Nombre">
+                                        <ItemTemplate>
+                                            <%# Eval("Nombre") %>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList runat="server" ID="ddl_ProductoAdmin" CssClass="form-control"
+                                                DataSourceID="SqlDataSourceMedicamentoGen" DataTextField="Medicamento" DataValueField="Id" SelectedValue='<%# Bind("IdMedicamento") %>'>
+                                            </asp:DropDownList>
+                                            <asp:SqlDataSource ID="SqlDataSourceMedicamentoGen" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>"
+                                                SelectCommand="Get_MedicamentoParticipante" SelectCommandType="StoredProcedure">
+                                                <SelectParameters>
+                                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="2" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+                                            <asp:RequiredFieldValidator ControlToValidate="ddl_ProductoAdmin" ForeColor="Red" Font-Bold="true"
+                                                InitialValue="0" ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="AdminProducto" />
+                                        </EditItemTemplate>
+                                        <ItemStyle Width="50%" />
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSourceMedicamentosParticipantes" runat="server"
+                                ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>"
+                                SelectCommand="Get_MedicamentoParticipante" SelectCommandType="StoredProcedure"
+                                UpdateCommand="Man_MedicamentoParticipante" UpdateCommandType="StoredProcedure"
+                                DeleteCommand="Man_MedicamentoParticipante" DeleteCommandType="StoredProcedure">
+                                <SelectParameters>
+                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="0" />
+                                </SelectParameters>
+                                <DeleteParameters>
+                                    <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="3" />
+                                </DeleteParameters>
+                            </asp:SqlDataSource>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
                 </asp:View>
 
                 <asp:View ID="view_Estadisticas" runat="server">
