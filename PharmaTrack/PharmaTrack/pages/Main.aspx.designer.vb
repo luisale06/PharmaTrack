@@ -563,6 +563,24 @@ Partial Public Class _Main
     Protected WithEvents view_Productos As Global.System.Web.UI.WebControls.View
 
     '''<summary>
+    '''Control gv_ProductosAdmin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gv_ProductosAdmin As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourceMedicamentosParticipantes.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourceMedicamentosParticipantes As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''Control view_Estadisticas.
     '''</summary>
     '''<remarks>
