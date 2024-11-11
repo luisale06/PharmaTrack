@@ -599,22 +599,22 @@ Partial Public Class _Main
     Protected WithEvents ViewResumen As Global.System.Web.UI.WebControls.View
 
     '''<summary>
-    '''Control PanelTotalPuntos.
+    '''Control gv_Puntaje.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents PanelTotalPuntos As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents gv_Puntaje As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Control lbl_PuntajeTotal.
+    '''Control SqlDataSourcePuntaje.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_PuntajeTotal As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SqlDataSourcePuntaje As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control ViewRegistrarFactura.

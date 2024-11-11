@@ -631,18 +631,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._PanelTotalPuntos">
+<member name="F:PharmaTrack._Main._gv_Puntaje">
 <summary>
-Control PanelTotalPuntos.
+Control gv_Puntaje.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_PuntajeTotal">
+<member name="F:PharmaTrack._Main._SqlDataSourcePuntaje">
 <summary>
-Control lbl_PuntajeTotal.
+Control SqlDataSourcePuntaje.
 </summary>
 <remarks>
 Campo generado automáticamente.
