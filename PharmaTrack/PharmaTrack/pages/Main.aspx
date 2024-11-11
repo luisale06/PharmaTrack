@@ -272,7 +272,8 @@
                             <asp:Literal ID="ltl_limpiar_busqueda" runat="server" Text="Limpiar Busqueda"></asp:Literal>
                         </asp:LinkButton>
                         <asp:GridView ID="gv_FacturasAprobacion" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
-                                DataSourceID="SqlDataSourceFacturasTodas" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
+                            DataSourceID="SqlDataSourceFacturasTodas" CssClass="table table-bordered table-hover  margin-top-20" 
+                            AllowPaging="True" PageSize="10" OnRowUpdating="gv_FacturasAprobacion_RowUpdating">
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
                                 <EditItemTemplate>
@@ -282,6 +283,10 @@
                                     <asp:LinkButton ID="imgBtn_Cancel_Factura" ToolTip="Cancelar" CausesValidation="False" CssClass="btn btn-cancel"
                                         runat="server" CommandName="Cancel">
                                         <span class="glyphicon glyphicon-remove"></span </asp:LinkButton>
+                                    <asp:HiddenField ID="hf_IdUsuario" runat="server" Value='<%# Eval("IdUsuario") %>' />
+                                    <asp:HiddenField ID="hf_IdMedicamento" runat="server" Value='<%# Eval("IdMedicamento") %>' />
+                                    <asp:HiddenField ID="hf_Puntaje" runat="server" Value='<%# Eval("Puntaje") %>' />
+                                    <asp:HiddenField ID="hf_Cantidad" runat="server" Value='<%# Eval("Cantidad") %>' />
                                 </EditItemTemplate>
                                 <ItemTemplate>
                                     <asp:LinkButton ID="imgBtn_Editar_Factura" ToolTip="Editar" CssClass="btn btn-success" runat="server"
@@ -316,18 +321,19 @@
                                     <%# Eval("Cliente") %>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Fecha">
+                            <asp:TemplateField HeaderText="Fecha" SortExpression="FechaRegistro">
                                 <ItemTemplate>
                                     <%#Eval("FechaRegistro", "{0:d}") %>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Estado">
+                            <asp:TemplateField HeaderText="Estado" SortExpression="Estado">
                                 <ItemTemplate>
                                     <%# Eval("Estado") %>
                                 </ItemTemplate>
                                 <EditItemTemplate>
                                     <asp:DropDownList runat="server" ID="ddl_Estado" CssClass="form-control" BackColor="White" Width="90%"
-                                        DataSourceID="SqlDataSourceEstado" DataTextField="Estado" DataValueField="Id" SelectedValue='<%# Bind("IdEstado") %>'></asp:DropDownList>
+                                        DataSourceID="SqlDataSourceEstado" DataTextField="Estado" DataValueField="Id"
+                                        SelectedValue='<%# Bind("IdEstado") %>' Enabled='<%#IIf(Eval("IdEstado") = 1, "True", "False")%>'></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSourceEstado" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
                                         SelectCommand="Get_EstadoFactura" SelectCommandType="StoredProcedure">
                                         <SelectParameters>
@@ -467,24 +473,31 @@
                 </asp:View>
 
                 <asp:View ID="ViewResumen" runat="server">
-                    <h2>Resumen</h2>
-                    <p>Aquí puedes ver  tu balance actual de puntos y próximos canjes disponibles</p>
-                    <table width="100%">
-                        <tr>
-                            <td width="30%">
-                               
-                            </td>
-                            <td width="40%">
-                                <asp:Panel runat="server" ID="PanelTotalPuntos" CssClass="panel-redondeado">
-                                    <h3>Total de puntos:</h3>
-                                    <asp:Label ID="lbl_PuntajeTotal" runat="server" ForeColor="Green" Text=" " Font-Size="30px"></asp:Label>
-                                </asp:Panel>
-                            </td>
-                            <td width="30%">
-                            </td>
-                        </tr>
-                    </table>
-                    
+                    <h2>Resumen de Puntos</h2>
+                    <p>Aquí puedes ver tu balance actual de puntos por cada medicamento</p>
+
+                    <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento" AllowSorting="True"
+                                DataSourceID="SqlDataSourcePuntaje" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10"
+                                EmptyDataText="No hay puntajes disponibles.">
+                        <Columns>
+                            <asp:TemplateField HeaderText="Medicamento">
+                                <ItemTemplate>
+                                    <%# Eval("Medicamento") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Puntos Disponibles">
+                                <ItemTemplate>
+                                    <%# Eval("Puntos") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSourcePuntaje" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
+                        SelectCommand="Calcula_Puntaje" SelectCommandType="StoredProcedure">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="hdf_Usuario" Name="IdUsuario" PropertyName="Value" Type="Int32" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                 </asp:View>
 
                 <asp:View ID="ViewRegistrarFactura" runat="server">

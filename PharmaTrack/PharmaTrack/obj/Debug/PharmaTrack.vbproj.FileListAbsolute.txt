@@ -380,7 +380,6 @@ C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTra
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\bin\es\System.Web.Optimization.resources.dll
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.vbproj.AssemblyReference.cache
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.Resources.resources
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.vbproj.GenerateResource.cache
 C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.vbproj.CoreCompileInputs.cache
@@ -466,3 +465,4 @@ K:\Documentos\GitHub\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.v
 K:\Documentos\GitHub\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.dll
 K:\Documentos\GitHub\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\WebForms_Basic.xml
 K:\Documentos\GitHub\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.pdb
+C:\Users\lbarreda\OneDrive - IICA\Desktop\Personal\TEC\Proyecto Diseno\PharmaTrack\PharmaTrack\PharmaTrack\PharmaTrack\obj\Debug\PharmaTrack.vbproj.AssemblyReference.cache

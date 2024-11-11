@@ -7,10 +7,8 @@ Public Class _Main
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         If Not IsPostBack Then
             CargarDatosUsuario(Session("UserId"))
-            CargarPuntaje()
             hdf_Usuario.Value = Session("UserId")
             lbl_NombreMain.Text = Session("UserNombre")
-            lbl_PuntajeTotal.Text = Session("UserPuntajeTotal")
             pnl_MainAdmin.Visible = False
             pnl_MainOperativo.Visible = False
             pnl_MainCliente.Visible = False
@@ -163,29 +161,36 @@ Public Class _Main
             End Try
         End Using
     End Sub
-    Private Function CargarPuntaje() As Integer
-        Dim puntajeTotal As Integer = 0
-        Dim userId As Integer = Convert.ToInt32(Session("UserId"))
+    Protected Sub gv_FacturasAprobacion_RowUpdating(sender As Object, e As GridViewUpdateEventArgs)
+        Dim hfIdUsuario As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdUsuario"), HiddenField)
+        Dim hfIdMedicamento As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdMedicamento"), HiddenField)
+        Dim hfPuntaje As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_Puntaje"), HiddenField)
+        Dim hfCantidad As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_Cantidad"), HiddenField)
 
-        Using conn As New SqlConnection(ConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString)
-            Using cmd As New SqlCommand("Calcula_Puntaje", conn)
-                cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("@IdUsuario", userId)
+        Dim idUsuario As Integer = Convert.ToInt32(hfIdUsuario.Value)
+        Dim idMedicamento As Integer = Convert.ToInt32(hfIdMedicamento.Value)
+        Dim puntos As Integer = Convert.ToInt32(hfPuntaje.Value)
+        Dim cantidad As Integer = Convert.ToInt32(hfCantidad.Value)
+        Dim puntajeObtenido As Integer = puntos * cantidad
 
-                conn.Open()
-                Dim result As Object = cmd.ExecuteScalar()
-                conn.Close()
+        Dim ddlEstado As DropDownList = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("ddl_Estado"), DropDownList)
+        If ddlEstado IsNot Nothing AndAlso ddlEstado.SelectedValue = "2" Then
+            Using conn As New SqlConnection(ConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString)
+                Using cmd As New SqlCommand("Man_RegistroPuntos", conn)
+                    cmd.CommandType = CommandType.StoredProcedure
 
-                If result IsNot Nothing AndAlso Not IsDBNull(result) Then
-                    puntajeTotal = Convert.ToInt32(result)
-                    Session("UserPuntajeTotal") = puntajeTotal
-                    lbl_PuntajeTotal.Text = puntajeTotal.ToString
-                End If
+                    cmd.Parameters.AddWithValue("@IdUsuario", idUsuario)
+                    cmd.Parameters.AddWithValue("@IdMedicamento", idMedicamento)
+                    cmd.Parameters.AddWithValue("@Puntos", puntajeObtenido)
+
+                    conn.Open()
+                    cmd.ExecuteNonQuery()
+                End Using
             End Using
-        End Using
+        End If
+    End Sub
 
-        Return puntajeTotal
-    End Function
+
     Protected Sub btn_actualizarPerfil_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
 
         txt_nombre.Enabled = True

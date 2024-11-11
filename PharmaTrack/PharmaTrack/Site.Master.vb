@@ -10,6 +10,7 @@
         End If
     End Sub
     Protected Sub btnCerrarSesion_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnCerrarSesion.Click
+        FormsAuthentication.SignOut()
         Session.Clear()
         Session.Abandon()
         Response.Redirect("~/")
