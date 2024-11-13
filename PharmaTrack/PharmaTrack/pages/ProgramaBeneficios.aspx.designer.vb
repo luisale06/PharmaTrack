@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class _Main
+Partial Public Class _ProgramaBeneficios
 
     '''<summary>
     '''Control hdf_Usuario.

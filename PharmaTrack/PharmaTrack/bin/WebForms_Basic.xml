@@ -46,7 +46,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._hdf_Usuario">
+<member name="F:PharmaTrack._ProgramaBeneficios._hdf_Usuario">
 <summary>
 Control hdf_Usuario.
 </summary>
@@ -55,7 +55,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._BtnPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._BtnPerfil">
 <summary>
 Control BtnPerfil.
 </summary>
@@ -64,7 +64,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_perfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_perfil">
 <summary>
 Control ltl_perfil.
 </summary>
@@ -73,7 +73,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_NombreMain">
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_NombreMain">
 <summary>
 Control lbl_NombreMain.
 </summary>
@@ -82,7 +82,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_MainAdmin">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_MainAdmin">
 <summary>
 Control pnl_MainAdmin.
 </summary>
@@ -91,7 +91,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_Usuarios">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_Usuarios">
 <summary>
 Control btn_Usuarios.
 </summary>
@@ -100,7 +100,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_usuarios">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_usuarios">
 <summary>
 Control ltl_usuarios.
 </summary>
@@ -109,7 +109,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_Productos">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_Productos">
 <summary>
 Control btn_Productos.
 </summary>
@@ -118,7 +118,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_productos">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_productos">
 <summary>
 Control ltl_productos.
 </summary>
@@ -127,7 +127,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_MainOperativo">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_MainOperativo">
 <summary>
 Control pnl_MainOperativo.
 </summary>
@@ -136,7 +136,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_Facturas">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_Facturas">
 <summary>
 Control btn_Facturas.
 </summary>
@@ -145,7 +145,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_facturas">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_facturas">
 <summary>
 Control ltl_facturas.
 </summary>
@@ -154,7 +154,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_Estadisticas">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_Estadisticas">
 <summary>
 Control btn_Estadisticas.
 </summary>
@@ -163,7 +163,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_estadisticas">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_estadisticas">
 <summary>
 Control ltl_estadisticas.
 </summary>
@@ -172,7 +172,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_MainCliente">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_MainCliente">
 <summary>
 Control pnl_MainCliente.
 </summary>
@@ -181,7 +181,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._BtnResumen">
+<member name="F:PharmaTrack._ProgramaBeneficios._BtnResumen">
 <summary>
 Control BtnResumen.
 </summary>
@@ -190,7 +190,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_resumen">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_resumen">
 <summary>
 Control ltl_resumen.
 </summary>
@@ -199,7 +199,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._BtnRegistrarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._BtnRegistrarFactura">
 <summary>
 Control BtnRegistrarFactura.
 </summary>
@@ -208,7 +208,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_registrar_factura">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_registrar_factura">
 <summary>
 Control ltl_registrar_factura.
 </summary>
@@ -217,7 +217,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._BtnHistorial">
+<member name="F:PharmaTrack._ProgramaBeneficios._BtnHistorial">
 <summary>
 Control BtnHistorial.
 </summary>
@@ -226,7 +226,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_historial">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_historial">
 <summary>
 Control ltl_historial.
 </summary>
@@ -235,7 +235,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._BtnCanjear">
+<member name="F:PharmaTrack._ProgramaBeneficios._BtnCanjear">
 <summary>
 Control BtnCanjear.
 </summary>
@@ -244,7 +244,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_canjear">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_canjear">
 <summary>
 Control ltl_canjear.
 </summary>
@@ -253,7 +253,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._MultiViewMain">
+<member name="F:PharmaTrack._ProgramaBeneficios._MultiViewMain">
 <summary>
 Control MultiViewMain.
 </summary>
@@ -262,7 +262,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._view_Perfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._view_Perfil">
 <summary>
 Control view_Perfil.
 </summary>
@@ -271,7 +271,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_nombre">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_nombre">
 <summary>
 Control txt_nombre.
 </summary>
@@ -280,7 +280,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_PApellido">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_PApellido">
 <summary>
 Control txt_PApellido.
 </summary>
@@ -289,7 +289,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_SApellido">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_SApellido">
 <summary>
 Control txt_SApellido.
 </summary>
@@ -298,7 +298,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_correo">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_correo">
 <summary>
 Control txt_correo.
 </summary>
@@ -307,7 +307,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_cedula">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_cedula">
 <summary>
 Control txt_cedula.
 </summary>
@@ -316,7 +316,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_telefono">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_telefono">
 <summary>
 Control txt_telefono.
 </summary>
@@ -325,7 +325,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_msj_error">
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_msj_error">
 <summary>
 Control lbl_msj_error.
 </summary>
@@ -334,7 +334,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_actualizarPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_actualizarPerfil">
 <summary>
 Control pnl_actualizarPerfil.
 </summary>
@@ -343,7 +343,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_actualizarPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_actualizarPerfil">
 <summary>
 Control btn_actualizarPerfil.
 </summary>
@@ -352,7 +352,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_actualizarPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_actualizarPerfil">
 <summary>
 Control ltl_actualizarPerfil.
 </summary>
@@ -361,7 +361,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_borrarPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_borrarPerfil">
 <summary>
 Control btn_borrarPerfil.
 </summary>
@@ -370,7 +370,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_borrarPerfil">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_borrarPerfil">
 <summary>
 Control ltl_borrarPerfil.
 </summary>
@@ -379,7 +379,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_AceptCancel">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_AceptCancel">
 <summary>
 Control pnl_AceptCancel.
 </summary>
@@ -388,7 +388,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_AceptarActualizacion">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_AceptarActualizacion">
 <summary>
 Control btn_AceptarActualizacion.
 </summary>
@@ -397,7 +397,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_AceptarActualizacion">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_AceptarActualizacion">
 <summary>
 Control ltl_AceptarActualizacion.
 </summary>
@@ -406,7 +406,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_CancelarActualizacion">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_CancelarActualizacion">
 <summary>
 Control btn_CancelarActualizacion.
 </summary>
@@ -415,7 +415,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_CancelarActualizacion">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_CancelarActualizacion">
 <summary>
 Control ltl_CancelarActualizacion.
 </summary>
@@ -424,7 +424,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._view_Usuarios">
+<member name="F:PharmaTrack._ProgramaBeneficios._view_Usuarios">
 <summary>
 Control view_Usuarios.
 </summary>
@@ -433,7 +433,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_FiltroUsuarios">
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_FiltroUsuarios">
 <summary>
 Control lbl_FiltroUsuarios.
 </summary>
@@ -442,7 +442,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_filtroUsuarios">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_filtroUsuarios">
 <summary>
 Control txt_filtroUsuarios.
 </summary>
@@ -451,7 +451,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lnk_BuscarUsuario">
+<member name="F:PharmaTrack._ProgramaBeneficios._lnk_BuscarUsuario">
 <summary>
 Control lnk_BuscarUsuario.
 </summary>
@@ -460,7 +460,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_buscarUsuario">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_buscarUsuario">
 <summary>
 Control ltl_buscarUsuario.
 </summary>
@@ -469,7 +469,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lnk_limpiarUsuario">
+<member name="F:PharmaTrack._ProgramaBeneficios._lnk_limpiarUsuario">
 <summary>
 Control lnk_limpiarUsuario.
 </summary>
@@ -478,7 +478,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_limpiar_busquedaUsuario">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_limpiar_busquedaUsuario">
 <summary>
 Control ltl_limpiar_busquedaUsuario.
 </summary>
@@ -487,7 +487,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._gv_UsuariosAdmin">
+<member name="F:PharmaTrack._ProgramaBeneficios._gv_UsuariosAdmin">
 <summary>
 Control gv_UsuariosAdmin.
 </summary>
@@ -496,7 +496,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceUsuariosTodos">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceUsuariosTodos">
 <summary>
 Control SqlDataSourceUsuariosTodos.
 </summary>
@@ -505,7 +505,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._view_Facturas">
+<member name="F:PharmaTrack._ProgramaBeneficios._view_Facturas">
 <summary>
 Control view_Facturas.
 </summary>
@@ -514,7 +514,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_Filtro">
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_Filtro">
 <summary>
 Control lbl_Filtro.
 </summary>
@@ -523,7 +523,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_filtro">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_filtro">
 <summary>
 Control txt_filtro.
 </summary>
@@ -532,7 +532,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lnk_Buscar">
+<member name="F:PharmaTrack._ProgramaBeneficios._lnk_Buscar">
 <summary>
 Control lnk_Buscar.
 </summary>
@@ -541,7 +541,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_buscar">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_buscar">
 <summary>
 Control ltl_buscar.
 </summary>
@@ -550,7 +550,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lnk_limpiar">
+<member name="F:PharmaTrack._ProgramaBeneficios._lnk_limpiar">
 <summary>
 Control lnk_limpiar.
 </summary>
@@ -559,7 +559,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_limpiar_busqueda">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_limpiar_busqueda">
 <summary>
 Control ltl_limpiar_busqueda.
 </summary>
@@ -568,7 +568,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._gv_FacturasAprobacion">
+<member name="F:PharmaTrack._ProgramaBeneficios._gv_FacturasAprobacion">
 <summary>
 Control gv_FacturasAprobacion.
 </summary>
@@ -577,7 +577,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceFacturasTodas">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceFacturasTodas">
 <summary>
 Control SqlDataSourceFacturasTodas.
 </summary>
@@ -586,7 +586,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._view_Productos">
+<member name="F:PharmaTrack._ProgramaBeneficios._view_Productos">
 <summary>
 Control view_Productos.
 </summary>
@@ -595,7 +595,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._gv_ProductosAdmin">
+<member name="F:PharmaTrack._ProgramaBeneficios._gv_ProductosAdmin">
 <summary>
 Control gv_ProductosAdmin.
 </summary>
@@ -604,7 +604,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceMedicamentosParticipantes">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceMedicamentosParticipantes">
 <summary>
 Control SqlDataSourceMedicamentosParticipantes.
 </summary>
@@ -613,7 +613,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._view_Estadisticas">
+<member name="F:PharmaTrack._ProgramaBeneficios._view_Estadisticas">
 <summary>
 Control view_Estadisticas.
 </summary>
@@ -622,7 +622,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ViewResumen">
+<member name="F:PharmaTrack._ProgramaBeneficios._ViewResumen">
 <summary>
 Control ViewResumen.
 </summary>
@@ -631,7 +631,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._gv_Puntaje">
+<member name="F:PharmaTrack._ProgramaBeneficios._gv_Puntaje">
 <summary>
 Control gv_Puntaje.
 </summary>
@@ -640,7 +640,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourcePuntaje">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourcePuntaje">
 <summary>
 Control SqlDataSourcePuntaje.
 </summary>
@@ -649,7 +649,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ViewRegistrarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._ViewRegistrarFactura">
 <summary>
 Control ViewRegistrarFactura.
 </summary>
@@ -658,7 +658,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ddl_Producto">
+<member name="F:PharmaTrack._ProgramaBeneficios._ddl_Producto">
 <summary>
 Control ddl_Producto.
 </summary>
@@ -667,7 +667,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceMedicamentos">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceMedicamentos">
 <summary>
 Control SqlDataSourceMedicamentos.
 </summary>
@@ -676,7 +676,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_Cantidad">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_Cantidad">
 <summary>
 Control txt_Cantidad.
 </summary>
@@ -685,7 +685,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ddl_farmacia">
+<member name="F:PharmaTrack._ProgramaBeneficios._ddl_farmacia">
 <summary>
 Control ddl_farmacia.
 </summary>
@@ -694,7 +694,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceFarmacias">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceFarmacias">
 <summary>
 Control SqlDataSourceFarmacias.
 </summary>
@@ -703,7 +703,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_FechaRegistro">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_FechaRegistro">
 <summary>
 Control txt_FechaRegistro.
 </summary>
@@ -712,7 +712,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._txt_ImagenFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_ImagenFactura">
 <summary>
 Control txt_ImagenFactura.
 </summary>
@@ -721,7 +721,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._lbl_error_factura">
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_error_factura">
 <summary>
 Control lbl_error_factura.
 </summary>
@@ -730,7 +730,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_EditarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_EditarFactura">
 <summary>
 Control pnl_EditarFactura.
 </summary>
@@ -739,7 +739,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_AgregarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_AgregarFactura">
 <summary>
 Control btn_AgregarFactura.
 </summary>
@@ -748,7 +748,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_AgregarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_AgregarFactura">
 <summary>
 Control ltl_AgregarFactura.
 </summary>
@@ -757,7 +757,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._pnl_AceptCancelFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_AceptCancelFactura">
 <summary>
 Control pnl_AceptCancelFactura.
 </summary>
@@ -766,7 +766,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_AceptarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_AceptarFactura">
 <summary>
 Control btn_AceptarFactura.
 </summary>
@@ -775,7 +775,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_AceptarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_AceptarFactura">
 <summary>
 Control ltl_AceptarFactura.
 </summary>
@@ -784,7 +784,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._btn_CancelarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._btn_CancelarFactura">
 <summary>
 Control btn_CancelarFactura.
 </summary>
@@ -793,7 +793,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ltl_CancelarFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._ltl_CancelarFactura">
 <summary>
 Control ltl_CancelarFactura.
 </summary>
@@ -802,7 +802,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ViewHistorial">
+<member name="F:PharmaTrack._ProgramaBeneficios._ViewHistorial">
 <summary>
 Control ViewHistorial.
 </summary>
@@ -811,7 +811,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._gv_Facturas">
+<member name="F:PharmaTrack._ProgramaBeneficios._gv_Facturas">
 <summary>
 Control gv_Facturas.
 </summary>
@@ -820,7 +820,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._SqlDataSourceFacturas">
+<member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceFacturas">
 <summary>
 Control SqlDataSourceFacturas.
 </summary>
@@ -829,7 +829,7 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._Main._ViewCanjear">
+<member name="F:PharmaTrack._ProgramaBeneficios._ViewCanjear">
 <summary>
 Control ViewCanjear.
 </summary>

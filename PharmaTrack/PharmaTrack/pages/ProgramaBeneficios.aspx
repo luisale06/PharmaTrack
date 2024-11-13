@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Main.aspx.vb" Inherits="PharmaTrack._Main" %>
+﻿<%@ Page Title="Programa de Beneficios" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProgramaBeneficios.aspx.vb" Inherits="PharmaTrack._ProgramaBeneficios" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:HiddenField ID="hdf_Usuario" runat="server"/>
@@ -8,6 +8,8 @@
     <br />
     <main>
         <div>
+            <h1>PharmaTrack - Programa de Beneficios</h1>
+            <br />
             <table>
                 <tr>
                     <td width="30%">

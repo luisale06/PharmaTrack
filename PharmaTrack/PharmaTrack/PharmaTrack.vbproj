@@ -196,8 +196,7 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Images\ImagenMedicos.png" />
     <Content Include="Images\Logo.png" />
-    <Content Include="pages\MainAdmin.aspx" />
-    <Content Include="pages\Main.aspx" />
+    <Content Include="pages\ProgramaBeneficios.aspx" />
     <Content Include="register.aspx" />
     <Content Include="logon.aspx" />
     <Content Include="Default.aspx" />
@@ -267,18 +266,11 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="pages\MainAdmin.aspx.designer.vb">
-      <DependentUpon>MainAdmin.aspx</DependentUpon>
+    <Compile Include="pages\ProgramaBeneficios.aspx.designer.vb">
+      <DependentUpon>ProgramaBeneficios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\MainAdmin.aspx.vb">
-      <DependentUpon>MainAdmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Main.aspx.designer.vb">
-      <DependentUpon>Main.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Main.aspx.vb">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="pages\ProgramaBeneficios.aspx.vb">
+      <DependentUpon>ProgramaBeneficios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="register.aspx.designer.vb">

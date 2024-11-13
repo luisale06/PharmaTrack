@@ -32,7 +32,7 @@ Public Class _logon
                         Session("UserId") = reader("Id")
                         Session("Rol") = reader("Rol")
                         Session("UserNombre") = reader("NombreCliente")
-                        Response.Redirect("~/pages/Main.aspx")
+                        Response.Redirect("~/pages/ProgramaBeneficios.aspx")
                     Else
                         lbl_msj_error.Text = "Usuario o contraseña incorrectos."
                         lbl_msj_error.Visible = True
