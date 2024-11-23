@@ -12,6 +12,7 @@ Public Class ModuloCanje
     Private Property VObtenerCanjeables As VObtenerCanjeables
     Private Property VActualizarRegistro As VActualizarRegistro
     Private Property VObtenerRegistroDeCanje As VObtenerRegistroDeCanje
+    'Private Property ConexionBD As ConexionBaseDatos
 
 
     Public Sub New()
@@ -28,26 +29,65 @@ Public Class ModuloCanje
     End Sub
 
 
-
-
-    Public Function ObtenerSolicitudesPorCliente(identificacion As Integer) As List(Of Solicitud)
+    Private Sub ObtenerSolicitudes()
         Throw New NotImplementedException("No implementado")
-    End Function
+        'Solicitudes = ConexionBD.ObtenerSolicitudes()
+    End Sub
+    Private Sub ObtenerCanjes()
+        Throw New NotImplementedException("No implementado")
+        'Canjes = ConexionBD.ObtenerCanjes()
+    End Sub
+
+
+
+
 
     Public Function VerDetallesParaCanjear(producto As String) As String
         Throw New NotImplementedException("No implementado")
     End Function
 
-    Public Sub ActualizarRegistrosCanjeados()
-        Throw New NotImplementedException("No implementado")
+    Public Sub ActualizarRegistrosCanjeados(canjeadas As List(Of Solicitud))
+
+        VActualizarRegistro.VaciarSolicitudes()
+        For Each solicitud In canjeadas
+            VActualizarRegistro.VisitarSolicitud(solicitud)
+        Next
+        VActualizarRegistro.ActualizarRegistros()
     End Sub
 
     Public Sub CanjearProducto(producto As String)
         Throw New NotImplementedException("No implementado")
     End Sub
 
-    Public Function ObtenerSolicitudesCanjeadas(identificacion As Integer) As List(Of Canje)
-        Throw New NotImplementedException("No implementado")
+
+
+
+
+    Public Function ObtenerSolicitudesCanjeadas(identificacion As Integer) As List(Of Solicitud)
+
+        ObtenerSolicitudes()
+        BuscadorSolicitudes.SetStrategy(SRespaldadosPorCanje)
+        Return BuscadorSolicitudes.ObtenerSolicitudes(Solicitudes)
+    End Function
+
+    Public Function ObtenerSolicitudesPorCliente(identificacion As Integer) As List(Of Solicitud)
+
+        ObtenerSolicitudes()
+
+        VObtenerCanjeables.VaciarSolicitudes()
+        For Each solicitud In Solicitudes
+            VObtenerCanjeables.VisitarSolicitud(solicitud)
+        Next
+        VObtenerCanjeables.FiltrarPorCliente(identificacion)
+
+        Return VObtenerCanjeables.ObtenerSolicitudes()
+    End Function
+
+    Public Function ObtenerSolicitudesCronologicamente(identificacion As Integer) As List(Of Solicitud)
+
+        ObtenerSolicitudes()
+        BuscadorSolicitudes.SetStrategy(SCronologico)
+        Return BuscadorSolicitudes.ObtenerSolicitudes(Solicitudes)
     End Function
 
 End Class
