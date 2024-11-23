@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\buscadorsolicitudes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\buscadorsolicitudes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\strategy.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\strategy.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\cronologico.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\cronologico.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\respaldadosporcanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\respaldadosporcanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\vactualizarregistro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\vactualizarregistro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuscadorSolicitudes.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\BuscadorSolicitudes.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\BuscadorSolicitudes.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\BuscadorSolicitudes.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\BuscadorSolicitudes.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-23T21:57:10.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Strategy.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Strategy.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\Strategy.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Strategy.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\Strategy.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-23T21:56:52.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VActualizarRegistro.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\VActualizarRegistro.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\VActualizarRegistro.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\VActualizarRegistro.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\VActualizarRegistro.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-23T21:42:34.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RespaldadosPorCanje.vb",
               "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
               "RelativeDocumentMoniker": "PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
               "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
               "RelativeToolTip": "PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-23T08:44:54.472Z",
+              "WhenOpened": "2024-11-23T21:42:11.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ModuloCanje.vb",
-              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
-              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\ModuloCanje.vb",
-              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
-              "RelativeToolTip": "PharmaTrack\\Clases\\ModuloCanje.vb",
-              "ViewState": "AgIAACMAAAAAAAAAAAAUwDQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Cronologico.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Cronologico.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\Cronologico.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Cronologico.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\Cronologico.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-23T08:33:15.862Z",
+              "WhenOpened": "2024-11-23T21:41:58.905Z",
               "EditorCaption": ""
             }
           ]

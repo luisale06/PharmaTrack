@@ -19,6 +19,14 @@ Public Class VObtenerRegistroDeCanje
     End Function
 
     Public Function FiltrarPorCanje(canje As Canje) As List(Of Solicitud)
-        Throw New NotImplementedException("No implementado")
+        If canje Is Nothing OrElse canje.Solicitudes Is Nothing Then
+            Throw New ArgumentException("El canje o su lista de solicitudes no puede ser nulo.")
+        End If
+
+        solicitudes = solicitudes.Where(Function(s) canje.Solicitudes.Contains(s)).ToList()
     End Function
+
+    Public Sub VaciarSolicitudes()
+        solicitudes.Clear()
+    End Sub
 End Class

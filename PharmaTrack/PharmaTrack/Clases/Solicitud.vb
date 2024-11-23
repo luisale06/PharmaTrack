@@ -5,6 +5,7 @@ Public Class Solicitud
     Public Property Usuario As Integer
     Public Property Medicamento As Integer
     Public Property Fecha As Date
+    Public Property Estado As Integer
 
     Public Sub New(farmacia As Integer, usuario As Integer, medicamento As Integer, fecha As Date)
         Me.Farmacia = farmacia

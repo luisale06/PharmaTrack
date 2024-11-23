@@ -11,6 +11,6 @@ Public Class RespaldadosPorCanje
     End Function
 
     Private Function FiltrarPorCanje(solicitudes As List(Of Solicitud)) As List(Of Solicitud)
-        Throw New NotImplementedException("No implementado")
+        Return solicitudes.Where(Function(s) s.Estado = "Aplicado").ToList()
     End Function
 End Class

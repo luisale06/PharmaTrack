@@ -5,7 +5,7 @@ Public Class BuscadorSolicitudes
         Strategy = s
     End Sub
 
-    Public Function ObtenerSolicitudes(solicitudes As List(Of Solicitud)) As List(Of Solicitud) Implements Strategy.ObtenerSolicitudes
+    Public Function ObtenerSolicitudes(solicitudes As List(Of Solicitud)) As List(Of Solicitud)
         Return Strategy.ObtenerSolicitudes(solicitudes)
     End Function
 

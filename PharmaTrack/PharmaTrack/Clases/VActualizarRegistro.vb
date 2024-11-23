@@ -15,10 +15,14 @@ Public Class VActualizarRegistro
     End Sub
 
     Public Sub ActualizarRegistros()
-        Throw New NotImplementedException("No implementado")
+        For Each solicitud In solicitudes
+            If solicitud.Estado = "Aprobado" Then
+                solicitud.Estado = "Aplicado"
+            End If
+        Next
     End Sub
 
-    Public Function FiltrarPorCliente(usuario As Integer) As List(Of Solicitud)
-        Return solicitudes.Where(Function(s) s.Usuario = usuario).ToList()
-    End Function
+    Public Sub VaciarSolicitudes()
+        solicitudes.Clear()
+    End Sub
 End Class

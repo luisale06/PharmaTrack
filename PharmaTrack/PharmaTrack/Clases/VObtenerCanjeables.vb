@@ -18,7 +18,11 @@ Public Class VObtenerCanjeables
         Return solicitudes
     End Function
 
-    Public Function FiltrarPorCliente(usuario As Integer) As List(Of Solicitud)
-        Return solicitudes.Where(Function(s) s.Usuario = usuario).ToList()
-    End Function
+    Public Sub FiltrarPorCliente(usuario As Integer)
+        solicitudes.RemoveAll(Function(s) s.Usuario <> usuario)
+    End Sub
+
+    Public Sub VaciarSolicitudes()
+        solicitudes.Clear()
+    End Sub
 End Class
