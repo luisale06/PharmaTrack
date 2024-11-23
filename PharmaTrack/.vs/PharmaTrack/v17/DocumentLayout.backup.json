@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\pages\\programabeneficios.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\pages\\programabeneficios.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\pages\\programabeneficios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\pages\\programabeneficios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\clase1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\clase1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\respaldadosporcanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\respaldadosporcanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "About.aspx",
-              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\About.aspx",
-              "RelativeDocumentMoniker": "PharmaTrack\\About.aspx",
-              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\About.aspx",
-              "RelativeToolTip": "PharmaTrack\\About.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-22T04:13:05.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProgramaBeneficios.aspx.vb",
-              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\ProgramaBeneficios.aspx.vb",
-              "RelativeDocumentMoniker": "PharmaTrack\\pages\\ProgramaBeneficios.aspx.vb",
-              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\ProgramaBeneficios.aspx.vb",
-              "RelativeToolTip": "PharmaTrack\\pages\\ProgramaBeneficios.aspx.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RespaldadosPorCanje.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\RespaldadosPorCanje.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-22T04:13:24.77Z",
+              "WhenOpened": "2024-11-23T08:44:54.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Clase1.vb",
-              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Clase1.vb",
-              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\Clase1.vb",
-              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Clase1.vb",
-              "RelativeToolTip": "PharmaTrack\\Clases\\Clase1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ModuloCanje.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\ModuloCanje.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\ModuloCanje.vb",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-22T04:08:12.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgramaBeneficios.aspx",
-              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\ProgramaBeneficios.aspx",
-              "RelativeDocumentMoniker": "PharmaTrack\\pages\\ProgramaBeneficios.aspx",
-              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\pages\\ProgramaBeneficios.aspx",
-              "RelativeToolTip": "PharmaTrack\\pages\\ProgramaBeneficios.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T08:39:30.495Z",
+              "WhenOpened": "2024-11-23T08:33:15.862Z",
               "EditorCaption": ""
             }
           ]

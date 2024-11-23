@@ -259,7 +259,18 @@
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Clases\Clase1.vb" />
+    <Compile Include="Clases\BuscadorSolicitudes.vb" />
+    <Compile Include="Clases\Canje.vb" />
+    <Compile Include="Clases\RespaldadosPorCanje.vb" />
+    <Compile Include="Clases\Cronologico.vb" />
+    <Compile Include="Clases\ModuloCanje.vb" />
+    <Compile Include="Clases\Solicitud.vb" />
+    <Compile Include="Clases\Strategy.vb" />
+    <Compile Include="Clases\VObtenerRegistroDeCanje.vb" />
+    <Compile Include="Clases\Visitable.vb" />
+    <Compile Include="Clases\Visitante.vb" />
+    <Compile Include="Clases\VActualizarRegistro.vb" />
+    <Compile Include="Clases\VObtenerCanjeables.vb" />
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
