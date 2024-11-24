@@ -266,6 +266,7 @@
     <Compile Include="Clases\ModuloCanje.vb" />
     <Compile Include="Clases\Solicitud.vb" />
     <Compile Include="Clases\Strategy.vb" />
+    <Compile Include="Clases\UtilityDB.vb" />
     <Compile Include="Clases\VObtenerRegistroDeCanje.vb" />
     <Compile Include="Clases\Visitable.vb" />
     <Compile Include="Clases\Visitante.vb" />

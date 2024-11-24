@@ -3,7 +3,6 @@ Imports System.Data.SqlClient
 Imports System.Web.Configuration
 Public Class _ProgramaBeneficios
     Inherits Page
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         If Not IsPostBack Then
             CargarDatosUsuario(Session("UserId"))
@@ -47,42 +46,37 @@ Public Class _ProgramaBeneficios
         Dim farmacia As String = ddl_farmacia.SelectedValue
         Dim fechaRegistro As String = txt_FechaRegistro.Text.Trim()
 
-        Dim PharmaConnectionString As String = WebConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString
+        Dim parameters As New List(Of SqlParameter) From {
+        New SqlParameter("@IdMedicamento", medicamento),
+        New SqlParameter("@IdFarmacia", farmacia),
+        New SqlParameter("@Cantidad", cantidad),
+        New SqlParameter("@FechaRegistro", fechaRegistro),
+        New SqlParameter("@IdEstado", 1),
+        New SqlParameter("@IdUsuario", Session("UserId"))
+    }
+        Try
+            UtilityDB.ExecuteStoredProcedure("Man_Facturas", parameters)
 
-        Using conexion As New SqlConnection(PharmaConnectionString)
-            Dim comando As New SqlCommand("Man_Facturas", conexion)
-            comando.CommandType = CommandType.StoredProcedure
+            lbl_error_factura.Text = "Información de la factura ingresada correctamente"
+            lbl_error_factura.ForeColor = System.Drawing.Color.Green
+            lbl_error_factura.Visible = True
 
-            comando.Parameters.AddWithValue("@IdMedicamento", medicamento)
-            comando.Parameters.AddWithValue("@IdFarmacia", farmacia)
-            comando.Parameters.AddWithValue("@Cantidad", cantidad)
-            comando.Parameters.AddWithValue("@FechaRegistro", fechaRegistro)
-            comando.Parameters.AddWithValue("@IdEstado", 1)
-            comando.Parameters.AddWithValue("@IdUsuario", Session("UserId"))
+            ddl_farmacia.Enabled = False
+            txt_FechaRegistro.Enabled = False
+            ddl_Producto.Enabled = False
+            txt_Cantidad.Enabled = False
+            txt_ImagenFactura.Enabled = False
 
-            Try
-                conexion.Open()
-                comando.ExecuteNonQuery()
-                lbl_error_factura.Text = "Información de la factura ingresada correctamente"
-                lbl_error_factura.ForeColor = System.Drawing.Color.Green
-                lbl_error_factura.Visible = True
-                ddl_farmacia.Enabled = False
-                txt_FechaRegistro.Enabled = False
-                ddl_Producto.Enabled = False
-                txt_Cantidad.Enabled = False
-                txt_ImagenFactura.Enabled = False
-
-                pnl_AceptCancelFactura.Visible = False
-                pnl_EditarFactura.Visible = True
-            Catch ex As Exception
-                lbl_error_factura.Text = "Error al actualizar la información del usuario"
-                lbl_error_factura.ForeColor = System.Drawing.Color.Red
-                lbl_error_factura.Visible = True
-            End Try
-        End Using
+            pnl_AceptCancelFactura.Visible = False
+            pnl_EditarFactura.Visible = True
+        Catch ex As Exception
+            lbl_error_factura.Text = "Error al actualizar la información del usuario"
+            lbl_error_factura.ForeColor = System.Drawing.Color.Red
+            lbl_error_factura.Visible = True
+        End Try
     End Sub
-    Protected Sub btnAceptarActualizar_Click(sender As Object, e As EventArgs) Handles btn_AceptarActualizacion.Click
 
+    Protected Sub btnAceptarActualizar_Click(sender As Object, e As EventArgs) Handles btn_AceptarActualizacion.Click
         Dim nombre As String = txt_nombre.Text.Trim()
         Dim primerApellido As String = txt_PApellido.Text.Trim()
         Dim segundoApellido As String = txt_SApellido.Text.Trim()
@@ -90,77 +84,70 @@ Public Class _ProgramaBeneficios
         Dim telefono As String = txt_telefono.Text.Trim()
         Dim correo As String = txt_correo.Text.Trim()
 
-        Dim PharmaConnectionString As String = WebConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString
+        Dim parameters As New List(Of SqlParameter) From {
+        New SqlParameter("@Nombre", nombre),
+        New SqlParameter("@Apellido1", primerApellido),
+        New SqlParameter("@Apellido2", segundoApellido),
+        New SqlParameter("@Cedula", cedula),
+        New SqlParameter("@Telefono", telefono),
+        New SqlParameter("@Correo", correo),
+        New SqlParameter("@Operacion", 2),
+        New SqlParameter("@Id", Session("UserId"))
+    }
+        Try
+            UtilityDB.ExecuteStoredProcedure("Man_Usuarios", parameters)
 
-        Using conexion As New SqlConnection(PharmaConnectionString)
-            Dim comando As New SqlCommand("Man_Usuarios", conexion)
-            comando.CommandType = CommandType.StoredProcedure
+            lbl_msj_error.Text = "Información del usuario actualizada exitosamente."
+            lbl_msj_error.ForeColor = System.Drawing.Color.Green
+            lbl_msj_error.Visible = True
 
-            comando.Parameters.AddWithValue("@Nombre", nombre)
-            comando.Parameters.AddWithValue("@Apellido1", primerApellido)
-            comando.Parameters.AddWithValue("@Apellido2", segundoApellido)
-            comando.Parameters.AddWithValue("@Cedula", cedula)
-            comando.Parameters.AddWithValue("@Telefono", telefono)
-            comando.Parameters.AddWithValue("@Correo", correo)
-            comando.Parameters.AddWithValue("@Operacion", 2)
-            comando.Parameters.AddWithValue("@Id", Session("UserId"))
+            Session("UserNombre") = $"{nombre} {primerApellido}"
+            lbl_NombreMain.Text = $"{nombre} {primerApellido}"
 
-            Try
-                conexion.Open()
-                comando.ExecuteNonQuery()
-                lbl_msj_error.Text = "Información del usuario actualizada exitosamente."
-                lbl_msj_error.ForeColor = System.Drawing.Color.Green
-                lbl_msj_error.Visible = True
-                Session("UserNombre") = nombre + " " + primerApellido
-                lbl_NombreMain.Text = nombre + " " + primerApellido
-                txt_nombre.Enabled = False
-                txt_PApellido.Enabled = False
-                txt_SApellido.Enabled = False
-                txt_cedula.Enabled = False
-                txt_telefono.Enabled = False
-                txt_correo.Enabled = False
+            txt_nombre.Enabled = False
+            txt_PApellido.Enabled = False
+            txt_SApellido.Enabled = False
+            txt_cedula.Enabled = False
+            txt_telefono.Enabled = False
+            txt_correo.Enabled = False
 
-                pnl_AceptCancel.Visible = False
-                pnl_actualizarPerfil.Visible = True
-            Catch ex As Exception
-                lbl_msj_error.Text = "Error al actualizar la información del usuario"
-                lbl_msj_error.ForeColor = System.Drawing.Color.Red
-                lbl_msj_error.Visible = True
-            End Try
-        End Using
+            pnl_AceptCancel.Visible = False
+            pnl_actualizarPerfil.Visible = True
+        Catch ex As Exception
+            lbl_msj_error.Text = "Error al actualizar la información del usuario."
+            lbl_msj_error.ForeColor = System.Drawing.Color.Red
+            lbl_msj_error.Visible = True
+        End Try
     End Sub
+
     Protected Sub CargarDatosUsuario(Usuario As Int32)
-        Dim PharmaConnectionString As String = WebConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString
+        Dim parameters As New List(Of SqlParameter) From {
+        New SqlParameter("@Usuario", Usuario),
+        New SqlParameter("@Operacion", 1)}
+        Try
+            Dim resultTable As DataTable = UtilityDB.ExecuteStoredProcedureWithResult("Get_Usuarios", parameters)
 
-        Using conexion As New SqlConnection(PharmaConnectionString)
-            Dim comando As New SqlCommand("Get_Usuarios", conexion)
-            comando.CommandType = CommandType.StoredProcedure
-            comando.Parameters.AddWithValue("@Usuario", Usuario)
-            comando.Parameters.AddWithValue("@Operacion", 1)
+            If resultTable.Rows.Count > 0 Then
+                Dim row As DataRow = resultTable.Rows(0)
 
-            Try
-                conexion.Open()
-                Dim reader As SqlDataReader = comando.ExecuteReader()
-
-                If reader.Read() Then
-                    txt_nombre.Text = reader("Nombre").ToString()
-                    txt_PApellido.Text = reader("Apellido1").ToString()
-                    txt_SApellido.Text = reader("Apellido2").ToString()
-                    txt_cedula.Text = reader("Cedula").ToString()
-                    txt_telefono.Text = reader("Telefono").ToString()
-                    txt_correo.Text = reader("Correo").ToString()
-                Else
-                    lbl_msj_error.Text = "Usuario no encontrado."
-                    lbl_msj_error.ForeColor = System.Drawing.Color.Red
-                    lbl_msj_error.Visible = True
-                End If
-            Catch ex As Exception
-                lbl_msj_error.Text = "Error al cargar los datos del usuario"
+                txt_nombre.Text = row("Nombre").ToString()
+                txt_PApellido.Text = row("Apellido1").ToString()
+                txt_SApellido.Text = row("Apellido2").ToString()
+                txt_cedula.Text = row("Cedula").ToString()
+                txt_telefono.Text = row("Telefono").ToString()
+                txt_correo.Text = row("Correo").ToString()
+            Else
+                lbl_msj_error.Text = "Usuario no encontrado."
                 lbl_msj_error.ForeColor = System.Drawing.Color.Red
                 lbl_msj_error.Visible = True
-            End Try
-        End Using
+            End If
+        Catch ex As Exception
+            lbl_msj_error.Text = "Error al cargar los datos del usuario"
+            lbl_msj_error.ForeColor = System.Drawing.Color.Red
+            lbl_msj_error.Visible = True
+        End Try
     End Sub
+
     Protected Sub gv_FacturasAprobacion_RowUpdating(sender As Object, e As GridViewUpdateEventArgs)
         Dim hfIdUsuario As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdUsuario"), HiddenField)
         Dim hfIdMedicamento As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdMedicamento"), HiddenField)
@@ -175,21 +162,20 @@ Public Class _ProgramaBeneficios
 
         Dim ddlEstado As DropDownList = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("ddl_Estado"), DropDownList)
         If ddlEstado IsNot Nothing AndAlso ddlEstado.SelectedValue = "2" Then
-            Using conn As New SqlConnection(ConfigurationManager.ConnectionStrings("PharmaConnectionString").ConnectionString)
-                Using cmd As New SqlCommand("Man_RegistroPuntos", conn)
-                    cmd.CommandType = CommandType.StoredProcedure
 
-                    cmd.Parameters.AddWithValue("@IdUsuario", idUsuario)
-                    cmd.Parameters.AddWithValue("@IdMedicamento", idMedicamento)
-                    cmd.Parameters.AddWithValue("@Puntos", puntajeObtenido)
+            Dim parameters As New List(Of SqlParameter) From {
+            New SqlParameter("@IdUsuario", idUsuario),
+            New SqlParameter("@IdMedicamento", idMedicamento),
+            New SqlParameter("@Puntos", puntajeObtenido)
+        }
 
-                    conn.Open()
-                    cmd.ExecuteNonQuery()
-                End Using
-            End Using
+            Try
+                UtilityDB.ExecuteStoredProcedure("Man_RegistroPuntos", parameters)
+            Catch ex As Exception
+                Throw New Exception("Error al actualizar los puntos del usuario: " & ex.Message, ex)
+            End Try
         End If
     End Sub
-
 
     Protected Sub btn_actualizarPerfil_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
 
