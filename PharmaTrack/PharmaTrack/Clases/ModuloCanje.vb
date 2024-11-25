@@ -2,6 +2,8 @@ Imports System.Collections.ObjectModel
 
 Public Class ModuloCanje
 
+    Private Property DBConnection As DBAdapter
+
     Private Property Solicitudes As List(Of Solicitud)
     Private Property Canjes As List(Of Canje)
 
@@ -12,7 +14,6 @@ Public Class ModuloCanje
     Private Property VObtenerCanjeables As VObtenerCanjeables
     Private Property VActualizarRegistro As VActualizarRegistro
     Private Property VObtenerRegistroDeCanje As VObtenerRegistroDeCanje
-    'Private Property ConexionBD As ConexionBaseDatos
 
 
     Public Sub New()
@@ -29,13 +30,11 @@ Public Class ModuloCanje
     End Sub
 
 
-    Private Sub ObtenerSolicitudes()
-        Throw New NotImplementedException("No implementado")
-        'Solicitudes = ConexionBD.ObtenerSolicitudes()
+    Private Sub ObtenerSolicitudesBD()
+        Solicitudes = DBConnection.GetSolicitudes()
     End Sub
-    Private Sub ObtenerCanjes()
-        Throw New NotImplementedException("No implementado")
-        'Canjes = ConexionBD.ObtenerCanjes()
+    Private Sub ObtenerCanjesBD()
+        Canjes = DBConnection.GetCanjes()
     End Sub
 
 
@@ -62,17 +61,28 @@ Public Class ModuloCanje
 
 
 
+    Public Function ObtenerCanjes() As List(Of Canje)
+        ObtenerCanjesBD()
+        Return Canjes
+    End Function
+
+    Public Function ObtenerCanjesPorCliente(identificacion As Integer) As List(Of Canje)
+        ObtenerCanjesBD()
+        Return Canjes.Where(Function(s) s.IdentificacionUsuario = identificacion).ToList()
+    End Function
+
+
 
     Public Function ObtenerSolicitudesCanjeadas(identificacion As Integer) As List(Of Solicitud)
 
-        ObtenerSolicitudes()
+        ObtenerSolicitudesBD()
         BuscadorSolicitudes.SetStrategy(SRespaldadosPorCanje)
         Return BuscadorSolicitudes.ObtenerSolicitudes(Solicitudes)
     End Function
 
     Public Function ObtenerSolicitudesPorCliente(identificacion As Integer) As List(Of Solicitud)
 
-        ObtenerSolicitudes()
+        ObtenerSolicitudesBD()
 
         VObtenerCanjeables.VaciarSolicitudes()
         For Each solicitud In Solicitudes
@@ -85,7 +95,7 @@ Public Class ModuloCanje
 
     Public Function ObtenerSolicitudesCronologicamente(identificacion As Integer) As List(Of Solicitud)
 
-        ObtenerSolicitudes()
+        ObtenerSolicitudesBD()
         BuscadorSolicitudes.SetStrategy(SCronologico)
         Return BuscadorSolicitudes.ObtenerSolicitudes(Solicitudes)
     End Function

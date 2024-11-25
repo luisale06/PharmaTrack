@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\dbadapter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\dbadapter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\modulocanje.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|c:\\users\\emily\\documents\\github\\pharmatrack\\pharmatrack\\pharmatrack\\clases\\solicitud.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}|PharmaTrack\\PharmaTrack.vbproj|solutionrelative:pharmatrack\\clases\\solicitud.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Solicitud.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Solicitud.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\Solicitud.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\Solicitud.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\Solicitud.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-24T22:47:25.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DBAdapter.vb",
+              "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\DBAdapter.vb",
+              "RelativeDocumentMoniker": "PharmaTrack\\Clases\\DBAdapter.vb",
+              "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\DBAdapter.vb",
+              "RelativeToolTip": "PharmaTrack\\Clases\\DBAdapter.vb",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwCgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-24T22:12:51.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ModuloCanje.vb",
               "DocumentMoniker": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
               "RelativeDocumentMoniker": "PharmaTrack\\Clases\\ModuloCanje.vb",
               "ToolTip": "C:\\Users\\emily\\Documents\\GitHub\\PharmaTrack\\PharmaTrack\\PharmaTrack\\Clases\\ModuloCanje.vb",
               "RelativeToolTip": "PharmaTrack\\Clases\\ModuloCanje.vb",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwA0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-11-23T22:30:53.176Z",
               "EditorCaption": ""

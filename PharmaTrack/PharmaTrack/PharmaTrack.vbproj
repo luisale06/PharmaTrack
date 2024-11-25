@@ -261,6 +261,7 @@
     </Compile>
     <Compile Include="Clases\BuscadorSolicitudes.vb" />
     <Compile Include="Clases\Canje.vb" />
+    <Compile Include="Clases\DBAdapter.vb" />
     <Compile Include="Clases\RespaldadosPorCanje.vb" />
     <Compile Include="Clases\Cronologico.vb" />
     <Compile Include="Clases\ModuloCanje.vb" />
