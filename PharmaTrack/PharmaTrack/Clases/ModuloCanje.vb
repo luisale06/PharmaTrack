@@ -1,4 +1,6 @@
 Imports System.Collections.ObjectModel
+Imports System.Data
+Imports System.Data.SqlClient
 
 Public Class ModuloCanje
 
