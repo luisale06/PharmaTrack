@@ -15,6 +15,8 @@
                 <asp:HyperLink ID="hpl_iniciosesion" Text="Iniciar sesión" NavigateUrl="~/logon.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:HyperLink ID="hpl_registro" Text="Registrarse" NavigateUrl="~/register.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="hpl_iniciosesionFarmacia" Text="Acceder como Farmacia" NavigateUrl="~/logonFarmacia.aspx" runat="server" CssClass="btn btn-primary"></asp:HyperLink>
             </section>
         </div>
     </main>
