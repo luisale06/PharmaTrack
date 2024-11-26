@@ -493,6 +493,16 @@
                                     <%# Eval("Puntos") %>
                                 </ItemTemplate>
                             </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Puntos Disponibles">
+                                <ItemTemplate>
+                                    <%# Eval("PuntosDisponibles") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Puntos Canjeados">
+                                <ItemTemplate>
+                                    <%# Eval("PuntosCanjeados") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
                             <asp:TemplateField HeaderText="Farmacia">
                                 <ItemTemplate>
                                     <%# Eval("NombreFarmacia") %>

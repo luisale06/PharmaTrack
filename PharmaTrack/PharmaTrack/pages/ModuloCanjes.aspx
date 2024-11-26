@@ -27,7 +27,7 @@
                     <h2>Consulta de Cliente</h2>
                     <p>Ingrese la identificación del cliente para consultar su estado en el programa de beneficios</p>
                     <div class="label-input">
-                        <asp:Label ID="lbl_FiltroUsuarios" AssociatedControlID="txt_filtroUsuarios" runat="server" Text="Filtro" CssClass="form-label"></asp:Label>
+                        <asp:Label ID="lbl_FiltroUsuarios" AssociatedControlID="txt_filtroUsuarios" runat="server" Text="Cédula" CssClass="form-label"></asp:Label>
                         <asp:TextBox ID="txt_filtroUsuarios" runat="server" CssClass="form-control" Width="30%"></asp:TextBox>
                     </div>
                     <asp:LinkButton ID="lnk_BuscarUsuario" CssClass="btn btn-iica-blue-light" runat="server">
@@ -45,7 +45,7 @@
                         <ContentTemplate>
                             <asp:GridView ID="gv_UsuariosFarmacia" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
                                 DataSourceID="SqlDataSourceUsuariosTodos" CssClass="table table-bordered table-hover  margin-top-20"
-                                AllowPaging="True" PageSize="10">
+                                AllowPaging="True" EmptyDataText="No existe usuario registrado con la cédula ingresada">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Datos Cliente">
                                         <ItemTemplate>
@@ -68,7 +68,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Facturas">
                                         <ItemTemplate>
-                                            <asp:GridView ID="gv_Facturas" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
+                                            <asp:GridView ID="gv_Facturas" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True" EmptyDataText="Cliente sin facturas"
                                                         DataSourceID="SqlDataSourceFacturas" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="5">
                                                 <Columns>
                                                     <asp:TemplateField HeaderText="No. Factura">
@@ -139,7 +139,7 @@
 
                     <asp:UpdatePanel runat="server">
                         <ContentTemplate>
-                            <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento,IdFarmacia" AllowSorting="True"
+                            <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento,IdFarmacia" AllowSorting="True" EmptyDataText="Aún no existen puntos para canjear"
                                         DataSourceID="SqlDataSourcePuntaje" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
                                 <Columns>
                                     <asp:TemplateField HeaderText="Medicamento">
@@ -147,9 +147,19 @@
                                             <%# Eval("Medicamento") %>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Puntaje General">
+                                    <asp:TemplateField HeaderText="Puntos Acumulados">
                                         <ItemTemplate>
                                             <%# Eval("Puntos") %>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Puntos Disponibles">
+                                        <ItemTemplate>
+                                            <%# Eval("PuntosDisponibles") %>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Puntos Canjeados">
+                                        <ItemTemplate>
+                                            <%# Eval("PuntosCanjeados") %>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
