@@ -52,9 +52,6 @@
                 <asp:LinkButton ID="BtnHistorial" CssClass="btn btn-cancel" runat="server" OnClick="BtnHistorial_Click">
                     <asp:Literal ID="ltl_historial" runat="server" Text="<span class='glyphicon glyphicon-th-list'></span> Historial"></asp:Literal>
                 </asp:LinkButton>
-                <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClick="BtnCanjear_Click">
-                    <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span> Canjear"></asp:Literal>
-                </asp:LinkButton>
             </asp:Panel>
             <br />
             <div class="horizontal-line"></div>
@@ -568,10 +565,29 @@
                                 </td>
                             </tr>
                         </table>
-                        <div class="label-input">
-                            <asp:Label runat="server" Text="Imagen de la factura" AssociatedControlID="txt_ImagenFactura"></asp:Label>
-                            <asp:TextBox runat="server" ID="txt_ImagenFactura" CssClass="form-control" Enabled="false" BackColor="White" Width="95%"></asp:TextBox>
-                        </div>
+                        <asp:Panel ID="pnl_UploadFactura" runat="server" Visible="False">
+                            <asp:FileUpload ID="fup_Factura" runat="server" onchange="fileinfo()" style="display: none;"/>
+                            <asp:LinkButton runat="server" ID="lnk_fup_Factura" Text="Seleccionar archivo" CssClass="btn btn-cancel"></asp:LinkButton>
+                            <asp:TextBox runat="server" ID="txt_fup_Factura" BorderColor="Transparent" BackColor="Transparent" Enabled="false" Width="60%"></asp:TextBox>
+
+                            <script type="text/javascript">
+                                function fileinfo() {
+                                    var fileInput = document.getElementById('<%=fup_Factura.ClientID %>');
+                                    var filePath = fileInput.value;
+
+                                    var fileName = filePath.split('\\').pop();
+
+                                    document.getElementById('<%=txt_fup_Factura.ClientID%>').value = fileName;
+                                }
+                            </script>
+                            <asp:Label ID="lbl_NotaFactura" runat="server" Text=" Archivo permitidos (pdf)."></asp:Label>
+                            <br />
+                            <asp:RegularExpressionValidator ID="rev_ValidaFormatoArchivo" runat="server" ControlToValidate="fup_Factura"
+                                Display="Dynamic" ErrorMessage="Formato del achivo" Text="El archivo seleccionado no corresponde a un archivo válido (pdf)"
+                                ValidationExpression="^([a-zA-Z].*|[1-9].*)\.(((p|P)(d|D)(f|F)))$" ValidationGroup="Factura"></asp:RegularExpressionValidator>
+                            <asp:HiddenField ID="hdf_ArchivoFactura" runat="server" />
+                            <asp:HiddenField ID="hdf_TamArchivoFactura" runat="server" />
+                        </asp:Panel>
                     </asp:Panel>
                     <asp:Label ID="lbl_error_factura" runat="server" Visible="false" ForeColor="Red"></asp:Label>
                     <br />
@@ -638,10 +654,6 @@
                             <asp:controlparameter Name="Filtro" ControlID="txt_filtro" DefaultValue=" " PropertyName="Text" Type="String" />
                         </SelectParameters>
                     </asp:SqlDataSource>
-                </asp:View>
-                <asp:View ID="ViewCanjear" runat="server">
-                    <h2>Canjear</h2>
-                    <p>Seleccioma un producto para canjear con tus puntos acumulados</p>
                 </asp:View>
             </asp:MultiView>
         </div>

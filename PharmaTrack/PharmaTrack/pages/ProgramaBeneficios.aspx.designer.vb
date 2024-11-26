@@ -203,24 +203,6 @@ Partial Public Class _ProgramaBeneficios
     Protected WithEvents ltl_historial As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
-    '''Control BtnCanjear.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents BtnCanjear As Global.System.Web.UI.WebControls.LinkButton
-
-    '''<summary>
-    '''Control ltl_canjear.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ltl_canjear As Global.System.Web.UI.WebControls.Literal
-
-    '''<summary>
     '''Control MultiViewMain.
     '''</summary>
     '''<remarks>
@@ -680,13 +662,76 @@ Partial Public Class _ProgramaBeneficios
     Protected WithEvents txt_FechaRegistro As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txt_ImagenFactura.
+    '''Control pnl_UploadFactura.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_ImagenFactura As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents pnl_UploadFactura As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Control fup_Factura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents fup_Factura As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''Control lnk_fup_Factura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lnk_fup_Factura As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control txt_fup_Factura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_fup_Factura As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lbl_NotaFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_NotaFactura As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control rev_ValidaFormatoArchivo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rev_ValidaFormatoArchivo As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''Control hdf_ArchivoFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents hdf_ArchivoFactura As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''Control hdf_TamArchivoFactura.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents hdf_TamArchivoFactura As Global.System.Web.UI.WebControls.HiddenField
 
     '''<summary>
     '''Control lbl_error_factura.
@@ -795,13 +840,4 @@ Partial Public Class _ProgramaBeneficios
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSourceFacturas As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''Control ViewCanjear.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ViewCanjear As Global.System.Web.UI.WebControls.View
 End Class

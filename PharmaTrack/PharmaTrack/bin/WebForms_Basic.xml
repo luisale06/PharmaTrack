@@ -226,24 +226,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._ModuloCanjes._gv_Puntaje">
-<summary>
-Control gv_Puntaje.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._ModuloCanjes._SqlDataSourcePuntaje">
-<summary>
-Control SqlDataSourcePuntaje.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:PharmaTrack._ModuloCanjes._view_Historial">
 <summary>
 Control view_Historial.
@@ -454,24 +436,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:PharmaTrack._ProgramaBeneficios._ltl_historial">
 <summary>
 Control ltl_historial.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._ProgramaBeneficios._BtnCanjear">
-<summary>
-Control BtnCanjear.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._ProgramaBeneficios._ltl_canjear">
-<summary>
-Control ltl_canjear.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -937,9 +901,72 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:PharmaTrack._ProgramaBeneficios._txt_ImagenFactura">
+<member name="F:PharmaTrack._ProgramaBeneficios._pnl_UploadFactura">
 <summary>
-Control txt_ImagenFactura.
+Control pnl_UploadFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._fup_Factura">
+<summary>
+Control fup_Factura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._lnk_fup_Factura">
+<summary>
+Control lnk_fup_Factura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._txt_fup_Factura">
+<summary>
+Control txt_fup_Factura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._lbl_NotaFactura">
+<summary>
+Control lbl_NotaFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._rev_ValidaFormatoArchivo">
+<summary>
+Control rev_ValidaFormatoArchivo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._hdf_ArchivoFactura">
+<summary>
+Control hdf_ArchivoFactura.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ProgramaBeneficios._hdf_TamArchivoFactura">
+<summary>
+Control hdf_TamArchivoFactura.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1048,15 +1075,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:PharmaTrack._ProgramaBeneficios._SqlDataSourceFacturas">
 <summary>
 Control SqlDataSourceFacturas.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:PharmaTrack._ProgramaBeneficios._ViewCanjear">
-<summary>
-Control ViewCanjear.
 </summary>
 <remarks>
 Campo generado automáticamente.

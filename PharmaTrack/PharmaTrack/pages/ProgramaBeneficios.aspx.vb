@@ -23,6 +23,7 @@ Public Class _ProgramaBeneficios
                 Case Else
                     pnl_MainCliente.Visible = True
             End Select
+            lnk_fup_Factura.Attributes.Add("onclick", "document.getElementById('" + fup_Factura.ClientID + "').click(); return false;")
         End If
     End Sub
     Protected Sub lnk_Buscar_Click(sender As Object, e As EventArgs) Handles lnk_Buscar.Click
@@ -45,6 +46,7 @@ Public Class _ProgramaBeneficios
         Dim cantidad As String = txt_Cantidad.Text.Trim()
         Dim farmacia As String = ddl_farmacia.SelectedValue
         Dim fechaRegistro As String = txt_FechaRegistro.Text.Trim()
+        Dim archivoBytes As Byte() = fup_Factura.FileBytes
 
         Dim parameters As New List(Of SqlParameter) From {
         New SqlParameter("@IdMedicamento", medicamento),
@@ -52,7 +54,8 @@ Public Class _ProgramaBeneficios
         New SqlParameter("@Cantidad", cantidad),
         New SqlParameter("@FechaRegistro", fechaRegistro),
         New SqlParameter("@IdEstado", 1),
-        New SqlParameter("@IdUsuario", Session("UserId"))
+        New SqlParameter("@IdUsuario", Session("UserId")),
+        New SqlParameter("@Foto", archivoBytes)
     }
         Try
             UtilityDB.ExecuteStoredProcedure("Man_Facturas", parameters)
@@ -61,11 +64,18 @@ Public Class _ProgramaBeneficios
             lbl_error_factura.ForeColor = System.Drawing.Color.Green
             lbl_error_factura.Visible = True
 
+            ddl_farmacia.SelectedIndex = -1
             ddl_farmacia.Enabled = False
+
+            txt_FechaRegistro.Text = ""
             txt_FechaRegistro.Enabled = False
+
+            ddl_Producto.SelectedIndex = -1
             ddl_Producto.Enabled = False
+
+            txt_Cantidad.Text = ""
             txt_Cantidad.Enabled = False
-            txt_ImagenFactura.Enabled = False
+            pnl_UploadFactura.Visible = False
 
             pnl_AceptCancelFactura.Visible = False
             pnl_EditarFactura.Visible = True
@@ -196,7 +206,7 @@ Public Class _ProgramaBeneficios
         txt_FechaRegistro.Enabled = True
         ddl_Producto.Enabled = True
         txt_Cantidad.Enabled = True
-        txt_ImagenFactura.Enabled = True
+        pnl_UploadFactura.Visible = True
 
         pnl_AceptCancelFactura.Visible = True
         pnl_EditarFactura.Visible = False
@@ -218,7 +228,7 @@ Public Class _ProgramaBeneficios
         txt_FechaRegistro.Enabled = False
         ddl_Producto.Enabled = False
         txt_Cantidad.Enabled = False
-        txt_ImagenFactura.Enabled = False
+        pnl_UploadFactura.Visible = False
 
         pnl_AceptCancelFactura.Visible = False
         pnl_EditarFactura.Visible = True
@@ -252,9 +262,5 @@ Public Class _ProgramaBeneficios
 
     Protected Sub BtnHistorial_Click(ByVal sender As Object, ByVal e As EventArgs)
         MultiViewMain.ActiveViewIndex = 7
-    End Sub
-
-    Protected Sub BtnCanjear_Click(ByVal sender As Object, ByVal e As EventArgs)
-        MultiViewMain.ActiveViewIndex = 8
     End Sub
 End Class

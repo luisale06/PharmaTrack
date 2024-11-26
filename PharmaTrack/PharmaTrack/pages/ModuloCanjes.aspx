@@ -66,7 +66,7 @@
                                             <asp:HiddenField runat="server" ID="hdf_Usuario" Value='<%# Eval("Id") %>' />
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Facturas">
+                                    <asp:TemplateField HeaderText="Facturas y puntaje general del cliente por medicamento">
                                         <ItemTemplate>
                                             <asp:GridView ID="gv_Facturas" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True" EmptyDataText="Cliente sin facturas"
                                                         DataSourceID="SqlDataSourceFacturas" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="5">
@@ -115,6 +115,48 @@
                                                     <asp:ControlParameter ControlID="hdf_Farmacia" Name="IdFarmacia" PropertyName="Value" Type="Int32" />
                                                 </SelectParameters>
                                             </asp:SqlDataSource>
+
+                                            <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento,IdFarmacia" AllowSorting="True" EmptyDataText="Aún no existen puntos para canjear"
+                                                        DataSourceID="SqlDataSourcePuntaje" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
+                                                <Columns>
+                                                    <asp:TemplateField HeaderText="Medicamento">
+                                                        <ItemTemplate>
+                                                            <%# Eval("Medicamento") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Puntos Acumulados">
+                                                        <ItemTemplate>
+                                                            <%# Eval("Puntos") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Puntos Disponibles">
+                                                        <ItemTemplate>
+                                                            <%# Eval("PuntosDisponibles") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Puntos Canjeados">
+                                                        <ItemTemplate>
+                                                            <%# Eval("PuntosCanjeados") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Canjear">
+                                                        <ItemTemplate>
+                                                            <asp:HiddenField runat="server" ID="hf_MedicamentoCanje" Value='<%# Eval("IdMedicamento") %>' />
+                                                            <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClientClick="return confirm('¿Seguro que desea generar el canje de este producto al usuario? Este proceso es irreversible');">
+                                                                <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span>"></asp:Literal>
+                                                            </asp:LinkButton>
+                                                        </ItemTemplate>
+                                                        <ItemStyle HorizontalAlign="Center" />
+                                                    </asp:TemplateField>
+                                                </Columns>
+                                            </asp:GridView>
+                                            <asp:SqlDataSource ID="SqlDataSourcePuntaje" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
+                                                SelectCommand="Calcula_PuntajeXFarmacia" SelectCommandType="StoredProcedure">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter ControlID="hdf_Farmacia" Name="IdFarmacia" PropertyName="Value" Type="Int32" />
+                                                    <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
@@ -124,50 +166,6 @@
                                 SelectCommand="Get_Usuarios" SelectCommandType="StoredProcedure">
                                 <SelectParameters>
                                     <asp:Parameter Name="Operacion" Type="Int32" DefaultValue="2" />
-                                    <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
-                                </SelectParameters>
-                            </asp:SqlDataSource>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
-                    <br />
-                    <asp:Label runat="server" Text="Puntaje general del cliente por medicamento"></asp:Label>
-                    <asp:UpdatePanel runat="server">
-                        <ContentTemplate>
-                            
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
-
-                    <asp:UpdatePanel runat="server">
-                        <ContentTemplate>
-                            <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento,IdFarmacia" AllowSorting="True" EmptyDataText="Aún no existen puntos para canjear"
-                                        DataSourceID="SqlDataSourcePuntaje" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
-                                <Columns>
-                                    <asp:TemplateField HeaderText="Medicamento">
-                                        <ItemTemplate>
-                                            <%# Eval("Medicamento") %>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Puntos Acumulados">
-                                        <ItemTemplate>
-                                            <%# Eval("Puntos") %>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Puntos Disponibles">
-                                        <ItemTemplate>
-                                            <%# Eval("PuntosDisponibles") %>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Puntos Canjeados">
-                                        <ItemTemplate>
-                                            <%# Eval("PuntosCanjeados") %>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                            </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSourcePuntaje" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
-                                SelectCommand="Calcula_PuntajeXFarmacia" SelectCommandType="StoredProcedure">
-                                <SelectParameters>
-                                    <asp:ControlParameter ControlID="hdf_Farmacia" Name="IdFarmacia" PropertyName="Value" Type="Int32" />
                                     <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
                                 </SelectParameters>
                             </asp:SqlDataSource>
