@@ -46,6 +46,213 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._logonFarmacia._ddl_farmacia">
+<summary>
+Control ddl_farmacia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._logonFarmacia._SqlDataSourceFarmacias">
+<summary>
+Control SqlDataSourceFarmacias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._logonFarmacia._lbl_msj_error">
+<summary>
+Control lbl_msj_error.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._logonFarmacia._btn_accesoFarmacia">
+<summary>
+Control btn_accesoFarmacia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._hdf_Farmacia">
+<summary>
+Control hdf_Farmacia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._lbl_NombreMain">
+<summary>
+Control lbl_NombreMain.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._btn_Usuarios">
+<summary>
+Control btn_Usuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._ltl_usuarios">
+<summary>
+Control ltl_usuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._btn_Historial">
+<summary>
+Control btn_Historial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._ltl_Historial">
+<summary>
+Control ltl_Historial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._MultiViewMain">
+<summary>
+Control MultiViewMain.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._view_Usuarios">
+<summary>
+Control view_Usuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._lbl_FiltroUsuarios">
+<summary>
+Control lbl_FiltroUsuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._txt_filtroUsuarios">
+<summary>
+Control txt_filtroUsuarios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._lnk_BuscarUsuario">
+<summary>
+Control lnk_BuscarUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._ltl_buscarUsuario">
+<summary>
+Control ltl_buscarUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._lnk_limpiarUsuario">
+<summary>
+Control lnk_limpiarUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._ltl_limpiar_busquedaUsuario">
+<summary>
+Control ltl_limpiar_busquedaUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._gv_UsuariosFarmacia">
+<summary>
+Control gv_UsuariosFarmacia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._SqlDataSourceUsuariosTodos">
+<summary>
+Control SqlDataSourceUsuariosTodos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._view_Historial">
+<summary>
+Control view_Historial.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._lbl_Filtro">
+<summary>
+Control lbl_Filtro.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._txt_filtro">
+<summary>
+Control txt_filtro.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._ProgramaBeneficios._hdf_Usuario">
 <summary>
 Control hdf_Usuario.
@@ -1003,6 +1210,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:PharmaTrack._Default._hpl_registro">
 <summary>
 Control hpl_registro.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._Default._hpl_iniciosesionFarmacia">
+<summary>
+Control hpl_iniciosesionFarmacia.
 </summary>
 <remarks>
 Campo generado automáticamente.

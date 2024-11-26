@@ -11,41 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class _Default
+Partial Public Class _logonFarmacia
 
     '''<summary>
-    '''Control lbl_default.
+    '''Control ddl_farmacia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_default As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddl_farmacia As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control hpl_iniciosesion.
+    '''Control SqlDataSourceFarmacias.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents hpl_iniciosesion As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents SqlDataSourceFarmacias As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Control hpl_registro.
+    '''Control lbl_msj_error.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents hpl_registro As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents lbl_msj_error As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control hpl_iniciosesionFarmacia.
+    '''Control btn_accesoFarmacia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents hpl_iniciosesionFarmacia As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents btn_accesoFarmacia As Global.System.Web.UI.WebControls.LinkButton
 End Class
