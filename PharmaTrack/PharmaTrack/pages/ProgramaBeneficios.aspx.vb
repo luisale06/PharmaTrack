@@ -153,9 +153,11 @@ Public Class _ProgramaBeneficios
         Dim hfIdMedicamento As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdMedicamento"), HiddenField)
         Dim hfPuntaje As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_Puntaje"), HiddenField)
         Dim hfCantidad As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_Cantidad"), HiddenField)
+        Dim hfIdFarmacia As HiddenField = CType(gv_FacturasAprobacion.Rows(e.RowIndex).FindControl("hf_IdFarmacia"), HiddenField)
 
         Dim idUsuario As Integer = Convert.ToInt32(hfIdUsuario.Value)
         Dim idMedicamento As Integer = Convert.ToInt32(hfIdMedicamento.Value)
+        Dim idFarmacia As Integer = Convert.ToInt32(hfIdFarmacia.Value)
         Dim puntos As Integer = Convert.ToInt32(hfPuntaje.Value)
         Dim cantidad As Integer = Convert.ToInt32(hfCantidad.Value)
         Dim puntajeObtenido As Integer = puntos * cantidad
@@ -166,9 +168,9 @@ Public Class _ProgramaBeneficios
             Dim parameters As New List(Of SqlParameter) From {
             New SqlParameter("@IdUsuario", idUsuario),
             New SqlParameter("@IdMedicamento", idMedicamento),
+            New SqlParameter("@Idfarmacia", idFarmacia),
             New SqlParameter("@Puntos", puntajeObtenido)
         }
-
             Try
                 UtilityDB.ExecuteStoredProcedure("Man_RegistroPuntos", parameters)
             Catch ex As Exception

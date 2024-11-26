@@ -226,6 +226,24 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:PharmaTrack._ModuloCanjes._gv_Puntaje">
+<summary>
+Control gv_Puntaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:PharmaTrack._ModuloCanjes._SqlDataSourcePuntaje">
+<summary>
+Control SqlDataSourcePuntaje.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:PharmaTrack._ModuloCanjes._view_Historial">
 <summary>
 Control view_Historial.

@@ -158,6 +158,24 @@ Partial Public Class _ModuloCanjes
     Protected WithEvents SqlDataSourceUsuariosTodos As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''Control gv_Puntaje.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents gv_Puntaje As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''Control SqlDataSourcePuntaje.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourcePuntaje As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''Control view_Historial.
     '''</summary>
     '''<remarks>

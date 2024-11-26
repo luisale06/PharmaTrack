@@ -287,6 +287,7 @@
                                         <span class="glyphicon glyphicon-remove"></span </asp:LinkButton>
                                     <asp:HiddenField ID="hf_IdUsuario" runat="server" Value='<%# Eval("IdUsuario") %>' />
                                     <asp:HiddenField ID="hf_IdMedicamento" runat="server" Value='<%# Eval("IdMedicamento") %>' />
+                                    <asp:HiddenField ID="hf_IdFarmacia" runat="server" Value='<%# Eval("IdFarmacia") %>' />
                                     <asp:HiddenField ID="hf_Puntaje" runat="server" Value='<%# Eval("Puntaje") %>' />
                                     <asp:HiddenField ID="hf_Cantidad" runat="server" Value='<%# Eval("Cantidad") %>' />
                                 </EditItemTemplate>
@@ -478,7 +479,7 @@
                     <h2>Resumen de Puntos</h2>
                     <p>Aquí puedes ver tu balance actual de puntos por cada medicamento</p>
 
-                    <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento" AllowSorting="True"
+                    <asp:GridView ID="gv_Puntaje" runat="server" AutoGenerateColumns="False" DataKeyNames="IdUsuario,IdMedicamento,IdFarmacia" AllowSorting="True"
                                 DataSourceID="SqlDataSourcePuntaje" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10"
                                 EmptyDataText="No hay puntajes disponibles.">
                         <Columns>
@@ -490,6 +491,11 @@
                             <asp:TemplateField HeaderText="Puntos Disponibles">
                                 <ItemTemplate>
                                     <%# Eval("Puntos") %>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Farmacia">
+                                <ItemTemplate>
+                                    <%# Eval("NombreFarmacia") %>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
