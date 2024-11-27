@@ -188,6 +188,35 @@ Public Class _ProgramaBeneficios
             End Try
         End If
     End Sub
+    Protected Sub gv_Archivos_RowCommand(sender As Object, e As GridViewCommandEventArgs)
+        If e.CommandName = "Download" Then
+            Dim id As Integer = Convert.ToInt32(e.CommandArgument)
+            DescargarArchivo(id)
+        End If
+    End Sub
+    Private Sub DescargarArchivo(id As Integer)
+        Dim parameters As New List(Of SqlParameter)()
+        parameters.Add(New SqlParameter("@IdFactura", id))
+
+        Dim resultTable As DataTable = UtilityDB.ExecuteStoredProcedureWithResult("Get_ArchivoFactura", parameters)
+
+        If resultTable.Rows.Count > 0 Then
+            Dim fileData As Object = resultTable.Rows(0)("Foto")
+            If fileData IsNot DBNull.Value AndAlso fileData IsNot Nothing Then
+                Dim archivoFactura As Byte() = CType(fileData, Byte())
+                Response.ContentType = "application/pdf"
+                Response.AddHeader("Content-Disposition", "inline; filename=archivo.pdf")
+                Response.BinaryWrite(archivoFactura)
+                Response.End()
+            Else
+                Dim script As String = "alert('El archivo no está disponible.');"
+                ScriptManager.RegisterStartupScript(Me, Me.GetType(), "ArchivoNoDisponible", script, True)
+            End If
+        Else
+            Dim script As String = "alert('El archivo no se encontró en la base de datos.');"
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "ArchivoNoEncontrado", script, True)
+        End If
+    End Sub
 
     Protected Sub btn_actualizarPerfil_Click(sender As Object, e As EventArgs) Handles btn_actualizarPerfil.Click
 

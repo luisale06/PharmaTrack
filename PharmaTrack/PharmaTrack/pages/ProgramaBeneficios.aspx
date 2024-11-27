@@ -272,7 +272,7 @@
                         </asp:LinkButton>
                         <asp:GridView ID="gv_FacturasAprobacion" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
                             DataSourceID="SqlDataSourceFacturasTodas" CssClass="table table-bordered table-hover  margin-top-20" 
-                            AllowPaging="True" PageSize="10" OnRowUpdating="gv_FacturasAprobacion_RowUpdating">
+                            AllowPaging="True" PageSize="10" OnRowUpdating="gv_FacturasAprobacion_RowUpdating" OnRowCommand="gv_Archivos_RowCommand">
                         <Columns>
                             <asp:TemplateField ShowHeader="False">
                                 <EditItemTemplate>
@@ -343,6 +343,16 @@
                                     <asp:RequiredFieldValidator ControlToValidate="ddl_Estado" ForeColor="Red" Font-Bold="true"
                                         InitialValue="0" ErrorMessage="Requerido" Display="Dynamic" runat="server" ValidationGroup="Estado"/>
                                 </EditItemTemplate>
+                                <ItemStyle Width="15%"/>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Archivo Adjunto">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="btnDownload" CssClass="btn btn-cancel" runat="server" Visible='<%# Eval("ArchivoFactura") IsNot DBNull.Value AndAlso Eval("ArchivoFactura") IsNot Nothing %>'
+                                        CommandName="Download" CommandArgument='<%# Eval("Id") %>'>
+                                        <asp:Literal ID="ltl_download" runat="server" Text="<span class='glyphicon glyphicon-eye-open'></span>"></asp:Literal>
+                                    </asp:LinkButton>
+                                </ItemTemplate>
+                                <ItemStyle HorizontalAlign="Center" Width="10%"/>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>
@@ -611,8 +621,9 @@
                     <h2>Historial</h2>
                     <p>Revisa tus compras registradas y puntos acumulados con esas compras</p>
 
-                    <asp:GridView ID="gv_Facturas" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True"
-                                DataSourceID="SqlDataSourceFacturas" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
+                    <asp:GridView ID="gv_Facturas" runat="server" AutoGenerateColumns="False" 
+                        DataKeyNames="Id" AllowSorting="True" DataSourceID="SqlDataSourceFacturas" OnRowCommand="gv_Archivos_RowCommand"
+                        CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="10">
                         <Columns>
                             <asp:TemplateField HeaderText="Medicamento">
                                 <ItemTemplate>
@@ -643,6 +654,15 @@
                                 <ItemTemplate>
                                     <%# Eval("Estado") %>
                                 </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Archivo Adjunto">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="btnDownload" CssClass="btn btn-cancel" runat="server" Visible='<%# Eval("ArchivoFactura") IsNot DBNull.Value AndAlso Eval("ArchivoFactura") IsNot Nothing %>'
+                                        CommandName="Download" CommandArgument='<%# Eval("Id") %>'>
+                                        <asp:Literal ID="ltl_download" runat="server" Text="<span class='glyphicon glyphicon-eye-open'></span>"></asp:Literal>
+                                    </asp:LinkButton>
+                                </ItemTemplate>
+                                <ItemStyle HorizontalAlign="Center" Width="10%"/>
                             </asp:TemplateField>
                         </Columns>
                     </asp:GridView>

@@ -124,25 +124,33 @@
                                                             <%# Eval("Medicamento") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="Puntos Acumulados">
+                                                    <asp:TemplateField HeaderText="P. Acumulados">
                                                         <ItemTemplate>
                                                             <%# Eval("Puntos") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="Puntos Disponibles">
+                                                    <asp:TemplateField HeaderText="P. Disponibles">
                                                         <ItemTemplate>
                                                             <%# Eval("PuntosDisponibles") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="Puntos Canjeados">
+                                                    <asp:TemplateField HeaderText="P. Canjeados">
                                                         <ItemTemplate>
                                                             <%# Eval("PuntosCanjeados") %>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Costo (P. x4)">
+                                                        <ItemTemplate>
+                                                            <%# Eval("CostoCanje") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
                                                     <asp:TemplateField HeaderText="Canjear">
                                                         <ItemTemplate>
-                                                            <asp:HiddenField runat="server" ID="hf_MedicamentoCanje" Value='<%# Eval("IdMedicamento") %>' />
-                                                            <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" OnClientClick="return confirm('¿Seguro que desea generar el canje de este producto al usuario? Este proceso es irreversible');">
+                                                            <asp:HiddenField runat="server" ID="hf_MedicamentoCanje" Value='<%# Eval("IdMedicamento") %>'/>
+                                                            <asp:HiddenField runat="server" ID="hf_CostoCanje" Value='<%# Eval("CostoCanje") %>' />
+                                                            <asp:LinkButton ID="BtnCanjear" CssClass="btn btn-cancel" runat="server" Visible='<%#IIf(Eval("PuntosDisponibles") >= Eval("CostoCanje"), "True", "False")%>'
+                                                                OnClientClick="return confirm('¿Seguro que desea generar el canje de este producto al usuario? Este proceso es irreversible');"
+                                                                OnClick="BtnCanjear_Click">
                                                                 <asp:Literal ID="ltl_canjear" runat="server" Text="<span class='glyphicon glyphicon-shopping-cart'></span>"></asp:Literal>
                                                             </asp:LinkButton>
                                                         </ItemTemplate>
