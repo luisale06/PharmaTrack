@@ -256,5 +256,31 @@ Public Class DBAdapter
         End Try
     End Function
 
+    Public Sub RegistrarSolicitudesCanjeadas(solicitudes As List(Of Solicitud))
+        Dim procedure As String = "Man_Facturas"
+
+        Try
+            For Each solicitud As Solicitud In solicitudes
+                Dim parameters As New List(Of SqlParameter) From {
+                    New SqlParameter("@Operacion", 0),
+                    New SqlParameter("@Id", DBNull.Value),
+                    New SqlParameter("@IdEstado", 4),
+                    New SqlParameter("@IdMedicamento", solicitud.IdentificacionMedicamento),
+                    New SqlParameter("@IdFarmacia", DBNull.Value),
+                    New SqlParameter("@IdUsuario", solicitud.IdUsuario),
+                    New SqlParameter("@Cantidad", 1),
+                    New SqlParameter("@FechaRegistro", solicitud.Fecha),
+                    New SqlParameter("@Foto", DBNull.Value)
+                }
+
+                UtilityDB.ExecuteStoredProcedure(procedure, parameters)
+            Next
+
+            Console.WriteLine("All solicitudes processed successfully.")
+        Catch ex As Exception
+            Console.WriteLine($"An error occurred: {ex.Message}")
+        End Try
+    End Sub
+
 
 End Class
