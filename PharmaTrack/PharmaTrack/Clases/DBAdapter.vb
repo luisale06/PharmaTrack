@@ -220,7 +220,41 @@ Public Class DBAdapter
     End Function
 
 
+    Public Function GetMedicamentos() As List(Of String)
+        'Procedimiento
+        Dim Procedure As String = "Get_MedicamentoParticipante"
 
+        'Parametros
+        Dim Parameters As New List(Of SqlParameter)()
+
+        Try
+            Dim Resultado As DataTable = UtilityDB.ExecuteStoredProcedureWithResult(Procedure, Parameters)
+            Dim meds As New List(Of String)()
+
+            If Resultado IsNot Nothing Then
+                For Each row As DataRow In Resultado.Rows
+                    Dim id As Integer = Convert.ToInt32(row("Id"))
+                    Dim puntaje As Integer = Convert.ToInt32(row("Puntaje"))
+                    Dim precio As Integer = Convert.ToInt32(row("Precio"))
+                    Dim nombre As String = row("Nombre").ToString()
+                    Dim idMedicamento As Integer = Convert.ToInt32(row("IdMedicamento"))
+                    Dim visible As Integer = Convert.ToInt32(row("Visible"))
+                    Dim operacion As Integer = Convert.ToInt32(row("Operacion"))
+
+                    Dim med As String = $"Id: {id}, Puntaje: {puntaje}, Precio: {precio}, " &
+                            $"Nombre: {nombre}, IdMedicamento: {idMedicamento}, " &
+                            $"Visible: {visible}, Operacion: {operacion}"
+                    meds.Add(med)
+                Next
+            End If
+
+            Return meds
+
+        Catch ex As Exception
+            Console.WriteLine($"An error occurred: {ex.Message}")
+            Return New List(Of String)()
+        End Try
+    End Function
 
 
 End Class
