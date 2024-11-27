@@ -22,7 +22,7 @@
             </asp:LinkButton>
             <br />
             <div class="horizontal-line"></div>
-            <asp:MultiView ID="MultiViewMain" runat="server">
+            <asp:MultiView ID="MultiViewFarmacia" runat="server">
                 <asp:View ID="view_Usuarios" runat="server">
                     <h2>Consulta de Cliente</h2>
                     <p>Ingrese la identificación del cliente para consultar su estado en el programa de beneficios</p>

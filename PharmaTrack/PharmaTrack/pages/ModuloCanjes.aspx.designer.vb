@@ -68,13 +68,13 @@ Partial Public Class _ModuloCanjes
     Protected WithEvents ltl_Historial As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
-    '''Control MultiViewMain.
+    '''Control MultiViewFarmacia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents MultiViewMain As Global.System.Web.UI.WebControls.MultiView
+    Protected WithEvents MultiViewFarmacia As Global.System.Web.UI.WebControls.MultiView
 
     '''<summary>
     '''Control view_Usuarios.
