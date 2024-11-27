@@ -165,6 +165,34 @@
                                                     <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
                                                 </SelectParameters>
                                             </asp:SqlDataSource>
+
+                                            <asp:GridView ID="gv_Canjes" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" AllowSorting="True" EmptyDataText="Cliente sin canjes"
+                                                        DataSourceID="SqlDataSourceCanjes" CssClass="table table-bordered table-hover  margin-top-20" AllowPaging="True" PageSize="5">
+                                                <Columns>
+                                                    <asp:TemplateField HeaderText="Fecha" SortExpression="Fecha">
+                                                        <ItemTemplate>
+                                                            <%# Eval("Fecha", "{0:d}") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Producto">
+                                                        <ItemTemplate>
+                                                            <%# Eval("Nombre") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="Puntos Utilizados">
+                                                        <ItemTemplate>
+                                                            <%# Eval("PuntosRequeridos") %>
+                                                        </ItemTemplate>
+                                                    </asp:TemplateField>
+                                                </Columns>
+                                            </asp:GridView>
+                                            <asp:SqlDataSource ID="SqlDataSourceCanjes" runat="server" ConnectionString="<%$ ConnectionStrings:PharmaConnectionString %>" 
+                                                SelectCommand="Get_CanjesXUsuario" SelectCommandType="StoredProcedure">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter Name="Filtro" ControlID="txt_filtroUsuarios" DefaultValue=" " PropertyName="Text" Type="String" />
+                                                    <asp:ControlParameter ControlID="hdf_Farmacia" Name="IdFarmacia" PropertyName="Value" Type="Int32" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
